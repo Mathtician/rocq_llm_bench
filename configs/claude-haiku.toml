@@ -1,0 +1,7 @@
+name = "claude-haiku"
+harness = "claude"
+model = "claude-haiku-4-5-20251001"
+subagent = "none"
+timeout_s = 600
+[args]
+max_turns = 80

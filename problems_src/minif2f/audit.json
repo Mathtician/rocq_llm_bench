@@ -1,0 +1,363 @@
+{
+ "aime_1983_p1": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1983_AIME_Problems/Problem_1 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1983_p1.json",
+  "summary": "log_x w=24, log_y w=40, log_{xyz} w=12 with x,y,z>1, w>0 => log_z w = 60, logs written as ln w / ln b. Matches official (answer 060).",
+  "evidence": "53-line proof: ln x,ln y,ln z>0, ln(xyz)=sum, clear denominators, lra. Genuine (linear after unfolding logs)."
+ },
+ "aime_1983_p2": {
+  "status": "weakened",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1983_AIME_Problems/Problem_2 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1983_p2.json",
+  "summary": "Only proves the lower bound 15 <= f x on [p,15]; attainment (f(15)=15) is not stated, so 'minimum = 15' is only half-formalized. f is constrained only at the point x, which is harmless.",
+  "evidence": "19-line proof: resolve the three Rabs by sign on [p,15] (f x = 30 - x >= 15), lra. The missing half is also trivial, so the problem is easy either way."
+ },
+ "aime_1983_p3": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1983_AIME_Problems/Problem_3 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1983_p3.json",
+  "summary": "Any duplicate-free list containing exactly the real zeros of x^2+18x+30-2sqrt(x^2+18x+45) has product 20 (answer 020). Coq's sqrt(neg)=0 adds no spurious roots: sqrt=0 branch needs x^2+18x=-30, making the radicand 15>0.",
+  "evidence": "156-line proof: classifies zeros as -9±sqrt 61 (roots_classify), then product lemma over NoDup lists. Genuine."
+ },
+ "aime_1983_p9": {
+  "status": "weakened",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1983_AIME_Problems/Problem_9 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1983_p9.json",
+  "summary": "Only the lower bound 12 <= (9x^2 sin^2 x + 4)/(x sin x) on (0,pi) is proved; attainment (needs x sin x = 2/3 for some x in (0,pi), an IVT argument) is omitted. Checked: 'sin x^2' parses as (sin x)^2.",
+  "evidence": "25-line proof: t = x sin x > 0, (3t-2)^2>=0, divide. That is the AM-GM half of the official solution; the attainment half is lost."
+ },
+ "aime_1984_p1": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1984_AIME_Problems/Problem_1 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1984_p1.json",
+  "summary": "u(n+1)=u n+1, sum_{k=0}^{97} u(k+1)=137 (a_1..a_98) => sum_{k=0}^{48} u(2(k+1)) = a_2+...+a_98 = 93. Indices and term counts check out.",
+  "evidence": "34-line proof: u n = u 0 + n, unfold finite sums by simpl, lra. Genuine."
+ },
+ "aime_1984_p15": {
+  "status": "faithful",
+  "computational": true,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1984_AIME_Problems/Problem_15 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1984_p15.json",
+  "summary": "Exact transcription of the 4 equations (1 written for 1^2); conclusion x^2+y^2+z^2+w^2=36. Hypotheses are linear in x^2,y^2,z^2,w^2, so the answer follows from a 4x4 rational linear solve.",
+  "evidence": "Proof is 'simpl in *; lra' (16 lines total). lra solves the linear system in the squares, bypassing the official polynomial-interpolation insight. Not vacuous; computational (linear decision procedure)."
+ },
+ "aime_1984_p5": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1984_AIME_Problems/Problem_5 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1984_p5.json",
+  "summary": "a,b>0, log_8 a + log_4 (b*b) = 5, log_8 b + log_4 (a*a) = 7 => ab = 512. Matches official (answer 512); positivity is the implicit domain. Upstream audit: 'no changes' (agree).",
+  "evidence": "59-line proof: ln 8=3ln2, ln4=2ln2, solve linear system for ln a+ln b=9 ln2, ln injectivity. Genuine."
+ },
+ "aime_1984_p7": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1984_AIME_Problems/Problem_7 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1984_p7.json",
+  "summary": "Any f: Z->Z with f n = n-3 for n>=1000 and f n = f(f(n+5)) for n<1000 has f 84 = 997. Matches official (answer 997).",
+  "evidence": "45-line proof: well-founded induction shows f n = f(n+2) on [0,999], iterate from 84 to 1000. Genuine."
+ },
+ "aime_1987_p5": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1987_AIME_Problems/Problem_5 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1987_p5.json",
+  "summary": "x,y:Z, y^2+3x^2y^2=30x^2+517 => 3x^2y^2=588. Exact (answer 588).",
+  "evidence": "41-line proof: factor (3x^2+1)(y^2-10)=507, bound |x|<=12, case split on x with a helper ruling out non-square y^2. Genuine (finite case split after the key factoring)."
+ },
+ "aime_1987_p8": {
+  "status": "weakened",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1987_AIME_Problems/Problem_8 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1987_p8.json",
+  "summary": "Only proves the upper bound: any n>0 with a unique k satisfying 8/15 < n/(n+k) < 7/13 has n <= 112. Omits that n=112 actually has a unique k (k=97), half the 'largest' claim. k:nat instead of integer is harmless (any solution has k>0).",
+  "evidence": "95-line proof: reduces to 8k<7n /\\ 6n<7k, uniqueness forbids k-1 and k+1, lia gives n<=112. Genuine for the half that is stated."
+ },
+ "aime_1988_p3": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1988_AIME_Problems/Problem_3 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1988_p3.json",
+  "summary": "logb defined as ln x/ln a; x>1 (the implicit domain needed for the nested logs) and log_2(log_8 x)=log_8(log_2 x) => (log_2 x)^2=27. Matches (answer 027).",
+  "evidence": "57-line proof: z=y/3, ln z = ln y/3 so z^3=y, (y/3)^3=y, y>0 => y^2=27. Genuine."
+ },
+ "aime_1988_p4": {
+  "status": "weakened",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1988_AIME_Problems/Problem_4 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1988_p4.json",
+  "summary": "Only proves n >= 20 (|a k|<1 for k<n and the sum identity over indices 0..n-1); the construction showing n=20 is achievable is omitted. n=0 case (pred 0 = 0 sums a 0) is harmless: hypothesis becomes |a0| = 19+|a0|, contradictory.",
+  "evidence": "43-line proof: sum |a k| < n, so 19 <= 19+|sum| < n. That is the bound half; attainment half lost."
+ },
+ "aime_1988_p8": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1988_AIME_Problems/Problem_8 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1988_p8.json",
+  "summary": "f: nat->nat->R with the three properties guarded by positivity => f 14 52 = 364. Matches official (answer 364). Upstream audit: 'no changes' (agree).",
+  "evidence": "37-line proof: Euclid-style chain of the recurrence and symmetry (14,52)->(14,38)->...->(2,2), lra. Genuine and it is the official solution."
+ },
+ "aime_1989_p8": {
+  "status": "faithful",
+  "computational": true,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1989_AIME_Problems/Problem_8 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1989_p8.json",
+  "summary": "Seven reals, the three given equations => fourth sum = 334. Exact (answer 334). The target is a fixed linear combination (eq1-3eq2+3eq3) of the hypotheses.",
+  "evidence": "Proof is 'intros; lra'. lra finds the linear combination; this is essentially the official insight (constant third differences), so not trivialized, but closable by a linear decision procedure."
+ },
+ "aime_1990_p15": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1990_AIME_Problems/Problem_15 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1990_p15.json",
+  "summary": "Reals a,b,x,y with the four power sums 3,7,16,42 => a x^5+b y^5 = 20. Exact (answer 020).",
+  "evidence": "29-line proof: recurrence S_{n+1}=(x+y)S_n - xy S_{n-1}, solve for x+y=-14, xy=-38, then lra. Genuine official solution."
+ },
+ "aime_1990_p4": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1990_AIME_Problems/Problem_4 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1990_p4.json",
+  "summary": "x>0, denominators nonzero, equation holds => x=13 (answer 013). Proves uniqueness of the positive solution, not existence (standard miniF2F convention for 'find'). Upstream audit: 'no changes' (agree).",
+  "evidence": "24-line proof: clear denominators with field, ring_simplify, nra. Genuine."
+ },
+ "aime_1991_p1": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1991_AIME_Problems/Problem_1 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1991_p1.json",
+  "summary": "x,y:nat (positivity dropped but x=0 or y=0 contradicts the second equation) with xy+x+y=71, x^2y+xy^2=880 => x^2+y^2=146. Exact (answer 146). Upstream audit: 'syntax improvement' (agree faithful).",
+  "evidence": "28-line proof: s=x+y, p=xy satisfy s+p=71, sp=880, helper lemmas give s=16 (s=55 impossible), then x^2+y^2=146. Genuine."
+ },
+ "aime_1991_p9": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1991_AIME_Problems/Problem_9 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1991_p9.json",
+  "summary": "sec x + tan x = 22/7 (cos,sin nonzero) => exists coprime p/q, q>0, equal to csc x + cot x, with p+q=44. Since the lowest-terms representation with q>0 is unique, the existential equals the official claim (29/15, answer 044).",
+  "evidence": "52-line proof: (1+sin)/cos = 22/7 => (1+cos)/sin = 29/15 via a key identity; witnesses 29,15. Genuine."
+ },
+ "aime_1994_p3": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1994_AIME_Problems/Problem_3 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1994_p3.json",
+  "summary": "f: Z->Z with f x + f(x-1) = x^2 for all integers, f 19 = 94 => f 94 mod 1000 = 561. Official f is on reals, but restricting to integer points loses nothing (values there are forced integers). Answer 561 matches (f(94)=4561).",
+  "evidence": "48-line proof: h n = 2f(n)-n(n+1) alternates sign, gives f 94 = 4561, final vm_compute of 4561 mod 1000. Genuine derivation; only the last step computes."
+ },
+ "aime_1995_p7": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1995_AIME_Problems/Problem_7 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1995_p7.json",
+  "summary": "k,m,n positive nat, gcd m n=1, (1+sin t)(1+cos t)=5/4, (1-sin t)(1-cos t)=m/n - sqrt k => k+m+n=27 (13/4 - sqrt10; answer 027). Uniqueness of (m,n,k) is required and holds by irrationality of sqrt 10. Upstream audit: 'no changes' (agree).",
+  "evidence": "163-line proof: derive w with (w+13/4)^2=10, then an integer argument (proved irrationality of sqrt 10) forces k=10, 4m=13n, gcd gives m=13,n=4. Genuine and actually harder than the official solution, which assumes uniqueness."
+ },
+ "aime_1996_p5": {
+  "status": "trivialized",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1996_AIME_Problems/Problem_5 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/valid/aime_1996_p5.json",
+  "summary": "Hypotheses are contradictory: a,b,c are REAL and pairwise distinct roots of x^3+3x^2+4x-11, but that cubic is strictly increasing (f' = 3x^2+6x+4 has negative discriminant), so it has one real root. The official roots are complex (two non-real). Statement is vacuously true; the answer 23 is correct but irrelevant.",
+  "evidence": "Machine proof (85 lines) does the honest Vieta derivation, but I verified with coqc that the hypotheses are inconsistent: f(a)-f(b) = (a-b)(a^2+ab+b^2+3(a+b)+4) and the second factor = (a-b)^2/4 + 3/4 (a+b+2)^2 + 1 > 0, so a=b, contradicting a<>b (nra with those two square hints closes False). Fix: state over C (Coq.Complex / Coquelicot C) or phrase via Vieta.",
+  "counterexample": "problems_src/minif2f/counterexamples/aime_1996_p5_vacuous.v"
+ },
+ "aime_1997_p9": {
+  "status": "faithful",
+  "computational": false,
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1997_AIME_Problems/Problem_9 ; informal text+answer verified from https://raw.githubusercontent.com/facebookresearch/miniF2F/main/informal/test/aime_1997_p9.json",
+  "summary": "a>0, frac(1/a)=frac(a^2) using Int_part (= floor in Coq: up r - 1), 2<a^2<3 => a^12 - 144/a = 233. Exact (answer 233).",
+  "evidence": "47-line proof: Int_part(a^2)=2, Int_part(1/a)=0, so 1/a=a^2-2, a^3=2a+1, a^2=a+1, a^12=144a+89, 1/a=a-1. Genuine official solution."
+ },
+ "imo_1959_p1": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_1",
+  "summary": "gcd(21n+4,14n+3)=1 over nat is exactly the irreducibility claim.",
+  "evidence": "No subtraction/division artifacts; 17-line Euclid-style proof via Nat.gcd_sub_diag_r / gcd_add_mult_diag_r is the textbook argument."
+ },
+ "imo_1960_p2": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_2",
+  "summary": "Only the necessary direction of a 'for what x' problem: shows every solution lies in [-1/2,45/8); does not show all x in [-1/2,45/8)\\{0} satisfy the inequality.",
+  "evidence": "Hypotheses 0<=1+2x and nonzero denominator are faithful domain conditions (they correctly exclude x=0). Proof (rationalize to (1+s)^2 < s^2+8, then nra) is the standard forward computation; converse not required."
+ },
+ "imo_1961_p1": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_1",
+  "summary": "Proves only that distinct positive solutions force 0<a, b^2<a^2<3b^2; does not solve the system nor show these conditions are sufficient.",
+  "evidence": "Conclusion is a necessary condition only; the proof is ~15 lines of nra using a^2=b^2+2za and sum of squared differences. Sufficiency (existence of distinct positive x,y,z) is the lost half."
+ },
+ "imo_1962_p2": {
+  "status": "weakened",
+  "official_url": "https://prase.cz/kalva/imo/isoln/isoln622.html (also https://www.imo-official.org/problems/1962/)",
+  "summary": "Not the official inequality: official is sqrt(3-x)-sqrt(x+1) > 1/2 (answer x<1-sqrt31/8); the Rocq (following miniF2F's informal text) has an extra outer sqrt, i.e. threshold 1/4, with the answer 1-sqrt127/32 adjusted consistently. Also only the necessary direction.",
+  "evidence": "Numerically sqrt(3-x)-sqrt(x+1)=1/4 at x=1-sqrt127/32 (0.6478) and =1/2 at 1-sqrt31/8 (0.3040), so the Rocq statement is the true one-direction answer of the modified problem. Difficulty is essentially the same as the original; proof: extract 1/4<a-b via sqrt monotonicity, square, nra."
+ },
+ "imo_1962_p4": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_4",
+  "summary": "One direction only, and the answer set is loosened: disjuncts 3-4 (pi/6 + m*pi/6, 5pi/6 + m*pi/6) are all multiples of pi/6, including non-solutions such as x=0, instead of pi/6 + m*pi/3.",
+  "evidence": "Proof still needs the real content (identity 2cos x cos2x cos3x = sum - 1, then cos_eq_0_0), but cos3_zero picks m'=2m, showing the conclusion is a superset of the true solution set; converse (every listed x solves) is false for the Rocq set and absent anyway."
+ },
+ "imo_1963_p5": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_5",
+  "summary": "Exact identity cos(pi/7)-cos(2pi/7)+cos(3pi/7)=1/2 over R.",
+  "evidence": "Closed-form equality, nothing to weaken; 60-line trig proof."
+ },
+ "imo_1964_p1_1": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_1",
+  "summary": "Official (a) is 'find all n with 7 | 2^n-1'; Rocq proves only 7|2^n-1 -> 3|n. Lost converse (3|n -> 7|2^n-1) is easy.",
+  "evidence": "Truncated nat subtraction harmless since 2^n>=1; n=0 included (7|0, 3|0) consistently. Minor weakening only."
+ },
+ "imo_1964_p1_2": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_1",
+  "summary": "Part (b): 7 does not divide 2^n+1 for any n.",
+  "evidence": "No truncation; proof is strong induction with period 3 (2^(n+3)=7*2^n+2^n), the textbook argument."
+ },
+ "imo_1964_p2": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_2",
+  "summary": "Triangle-side inequality a^2(b+c-a)+... <= 3abc with positivity and strict triangle inequalities.",
+  "evidence": "Hypotheses encode 'sides of a triangle'. Short proof via SOS identity 8(3abc-LHS)=sum (b+c-a)((c+a-b)-(a+b-c))^2 is a genuine (standard) solution; this problem is genuinely easy."
+ },
+ "imo_1965_p1": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_1",
+  "summary": "Only shows solutions in [0,2pi] lie in [pi/4,7pi/4]; does not show every such x satisfies the double inequality.",
+  "evidence": "Conclusion is a necessary condition; the converse (the substantive other half of 'determine all x') is missing. Right-hand inequality appears only as a hypothesis."
+ },
+ "imo_1967_p3": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_3",
+  "summary": "Faithful for m>=k, but nat truncated subtraction c(m+i)-c(k) turns every negative factor into 0, so the m<k cases (nontrivial in Z when m+n<k) become trivial.",
+  "evidence": "Proof's first branch: `destruct (lt_dec m k)`; if m<k the i=1 factor truncates to 0 and it concludes with `exists 0`. The m>=k branch is the real argument (products of consecutive integers, prime p coprime to (n+1)!). Lost case is symmetric in difficulty, so the weakening is mild. is_prime definition is correct."
+ },
+ "imo_1968_p5_1": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_5",
+  "summary": "Part (a): f(x+a)=1/2+sqrt(f x - f x^2) implies f periodic.",
+  "evidence": "Rocq's sqrt of negatives = 0 does not help: since every y=(y-a)+a, 1/2<=f y<=1 everywhere, so period 2a works; the proof does exactly this (Hlo/Hhi then involution g_invol)."
+ },
+ "imo_1973_p3": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_3",
+  "summary": "Proves only the lower bound a^2+b^2>=4/5; attainment (a=+-4/5,b=-2/5), needed for 'minimum value', is missing.",
+  "evidence": "Proof is the real substitution t=x+1/x with |t|>=2 plus Cauchy-Schwarz-type identity; attainment (easy) is lost."
+ },
+ "imo_1974_p3": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_3",
+  "summary": "Sum_{k=0}^n C(2n+1,2k+1) 8^k not divisible by 5, with binomial defined by Pascal recursion.",
+  "evidence": "binom matches Pascal; seq 0 (S n) = 0..n; f n k = binom(2n+1)(2k+1)*2^(3k). 308-line proof, no trivialization route."
+ },
+ "imo_1974_p5": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_5",
+  "summary": "Only shows S in (1,2); does not show every value in (1,2) is attained, which is half of 'determine all possible values'.",
+  "evidence": "Proof is the elementary bounds a/(a+b+c+d) < term < a/(a+b) etc.; the continuity/attainment half is absent."
+ },
+ "imo_1977_p5": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_5",
+  "summary": "Characterizes (a,b) as (37,50),(7,50),(50,37),(50,7) via |a-22|=15,|b-22|=28 (or swapped); converse is a direct check of four pairs.",
+  "evidence": "a,b in nat not required positive, but a=0 or b=0 forces q=b (or a) and q^2=1977, impossible, and a=b=0 violates r<0. |b-22|=28 forces b=50. Note miniF2F informal text lists only two pairs; the Rocq has all four. 148-line proof."
+ },
+ "imo_1977_p6": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_6",
+  "summary": "f:nat->nat, f n>0 for all n, f(f n)<f(n+1) for n>0 implies f n=n for n>0.",
+  "evidence": "Since f n>0, h1 only ever evaluates f on positives; f 0 is an irrelevant extra value, so the restriction to N+ is exactly the problem. 63-line proof."
+ },
+ "imo_1978_p5": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_5",
+  "summary": "Injective f on nat with f 0 = 0; sum_{k=1}^n 1/k <= sum f(k)/k^2.",
+  "evidence": "Injectivity plus f 0=0 forces f k>=1 for k>=1, so this is exactly an injection N+->N+ (and every such extends). pred n / S k indexing gives k=1..n. 244-line proof."
+ },
+ "imo_1981_p6": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_6",
+  "summary": "Asks for f(4,1981); Rocq proves the recurrence f(4,y+1)=2^(f(4,y)+3)-3, which with f(4,0)=13 yields the tower, but f(4,0)=13 is not stated.",
+  "evidence": "Proof derives f1=y+2, f2=2y+3, f3=2^(y+3)-3 (the real content) and one rewrite; the base value is a trivial consequence of f3 but not proved. Truncated subtraction harmless (2^(..)>=8). Very mild weakening (same as Lean miniF2F encoding)."
+ },
+ "imo_1982_p1": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_1",
+  "summary": "f nat->nat with superadditivity-by-0-or-1 for positive m,n, f2=0, f3>0, f9999=3333 implies f1982=660.",
+  "evidence": "Constraint quantified over positive m,n only, matching the domain; f 0 unconstrained and unused. 78-line proof."
+ },
+ "imo_1983_p6": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_6",
+  "summary": "Inequality proved, but 'determine when equality occurs' (iff equilateral) is missing.",
+  "evidence": "Proof via Ravi substitution to 2(xz(x-y)^2+xy(y-z)^2+yz(z-x)^2) — the standard solution; the equality characterization is not in the statement."
+ },
+ "imo_1984_p2": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_2",
+  "summary": "Different claim: official asks to exhibit a pair (e.g. 18,1); Rocq proves the (true, unasked) minimality statement a+b>=19 for all such pairs, and never asserts existence.",
+  "evidence": "Proof uses genuine content: (a+b)^7-a^7-b^7=7ab(a+b)(a^2+ab+b^2)^2, hence 343 | a^2+ab+b^2 <= (a+b)^2, so a+b>=19. Python: min a+b is 19 at (1,18). The existence question (the actual problem) is lost; also provable in principle by finite search over a+b<=18."
+ },
+ "imo_1984_p6": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_6",
+  "summary": "Odd 0<a<b<c<d, ad=bc, a+d=2^k, b+c=2^m implies a=1.",
+  "evidence": "Direct transcription in nat, no subtraction. No verified proof (run hit 'axioms': theorem left Admitted). Statement is the true IMO problem; brute-force (a<200,b<400,c<800) finds only a=1 solutions."
+ },
+ "imo_1985_p6": {
+  "status": "trivialized",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_6",
+  "summary": "Hypotheses are inconsistent: the recurrence is required for n=0 too, giving x = f0(x)*(f0(x)+/INR 0) for all x, impossible for x < -c^2/4 (c=/0). So the theorem is vacuously true.",
+  "evidence": "Verified: scratchpad/audit/V1985.v proves (f 1 x = x) /\\ (recurrence for all n) -> False with nra (compiled by repo coqc). The deepseek proof (538 lines) did not exploit this, but any `exfalso` proof works. Same defect as Lean miniF2F imo_1985_p6.",
+  "counterexample": "problems_src/minif2f/counterexamples/imo_1985_p6_vacuous.v"
+ },
+ "imo_1987_p4": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_4",
+  "summary": "No f:nat->nat with f(f n)=n+1987 for all n.",
+  "evidence": "nat = nonnegative integers as in the official statement; negated existence form exact. Proof uses the standard involution/odd-count argument (124 lines)."
+ },
+ "imo_1987_p6": {
+  "status": "wrong",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_6",
+  "summary": "FALSE as stated: the hypothesis only covers 2<=k<=sqrt(n/3) (official: 0<=k), while the conclusion includes k=0. For n=4 the hypothesis is vacuous and the conclusion needs 4 prime.",
+  "evidence": "Verified counterexample in Rocq: scratchpad/audit/F1987.v proves the negation of the statement (n=4,k=0) with Qed. Other counterexamples: n=6,7,8,9,10,13,... The deepseek run ended 'statement_mismatch' (it altered the statement). Upstream audit marked it 'no changes', missing this.",
+  "counterexample": "problems_src/minif2f/counterexamples/imo_1987_p6_false.v"
+ },
+ "imo_1988_p6": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_6",
+  "summary": "ab+1 | a^2+b^2 implies the quotient is a perfect square (stated as INR x^2 = real quotient).",
+  "evidence": "Real division is exact given the divisibility hypothesis, so the conclusion is exactly 'quotient is a square'. Proof is genuine Vieta jumping (ordered_square by well-founded induction, 108 lines)."
+ },
+ "imo_1990_p3": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_3",
+  "summary": "n>=2 and n^2 | 2^n+1 implies n=3; converse (9|9) is trivial.",
+  "evidence": "Divisibility encoded as exists k, k*n^2 = 2^n+1 in nat, fine. No verified proof ('axioms': Admitted). Statement true (IMO); python check up to 3000 finds only n=3."
+ },
+ "imo_1992_p1": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_1",
+  "summary": "In Z, 1<p<q<r and (p-1)(q-1)(r-1) | pqr-1 implies (p,q,r) in {(2,4,8),(3,5,15)}; converse is a two-case check.",
+  "evidence": "Z avoids truncation; Z.divide matches. 122-line proof."
+ },
+ "imo_1993_p5": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_5",
+  "summary": "Existence of strictly increasing f with f1=2, f(fn)=fn+n; Rocq domain includes 0.",
+  "evidence": "Any N+ solution extends by f0=0 (f(f0)=f0 holds, monotone since f1=2), and a nat solution restricts to N+, so equivalent. Proof constructs f(n)=floor(phi*n+1/2) (188 lines), the real construction."
+ },
+ "imo_1997_p5": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_5",
+  "summary": "Positive x,y with x^(y^2)=y^x are exactly (1,1),(16,2),(27,3); converse is direct check.",
+  "evidence": "Direct transcription in nat. No verified proof ('axioms': Admitted). Statement true (IMO); python search x<200,y<40 finds exactly these three."
+ },
+ "imo_2001_p6": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_6",
+  "summary": "a>b>c>d>0, ac+bd=(b+d+a-c)(b+d+c-a) implies ab+cd not prime.",
+  "evidence": "Only possible truncation is b+d+c-a when a>b+c+d; then the RHS is 0 in nat while ac+bd>0, and in Z the RHS would be negative — both impossible, so equivalent. No verified proof (timeout). Statement true (IMO); python search a<60 finds no counterexample."
+ },
+ "imo_2006_p3": {
+  "status": "weakened",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_3",
+  "summary": "Official asks for the least M; Rocq only proves the bound with M=9sqrt2/32, not minimality. The missing absolute value is harmless (swapping a,b negates the expression).",
+  "evidence": "Proof is a genuine argument (centering, (a-b)^2(b-c)^2(c-a)^2 <= s^3/2, AM-GM-type key_poly), 94 lines. Sharpness (equality at a specific irrational point) is lost."
+ },
+ "imo_2019_p1": {
+  "status": "faithful",
+  "official_url": "https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_1",
+  "summary": "Full iff characterization f=0 or f(z)=2z+c over Z.",
+  "evidence": "Both directions required; 85-line proof."
+ }
+}

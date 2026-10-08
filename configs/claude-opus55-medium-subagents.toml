@@ -1,0 +1,11 @@
+# Claude Code, Opus 5.5 at medium effort, handing lemmas to subagents that are themselves
+# claude-opus55-medium attempts (rlb-run, `python3 lemma.py prove`). Otherwise identical to
+# claude-opus55-medium.
+name = "claude-opus55-medium-subagents"
+harness = "claude"
+model = "claude-opus-5-5"
+subagent = "configs/claude-opus55-medium.toml"
+timeout_s = 900
+[args]
+effort = "medium"
+max_turns = 80

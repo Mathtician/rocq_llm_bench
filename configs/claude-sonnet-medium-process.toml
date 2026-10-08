@@ -1,0 +1,10 @@
+# Sonnet 5 at medium effort with the process paragraph (prompts/process.md): A/B against claude-sonnet-medium.
+name = "claude-sonnet-medium-process"
+harness = "claude"
+model = "claude-sonnet-5"
+subagent = "none"
+prompt = "prompts/process.md"
+timeout_s = 900
+[args]
+effort = "medium"
+max_turns = 80

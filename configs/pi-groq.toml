@@ -1,0 +1,9 @@
+# Needs GROQ_API_KEY in the environment. Pick a model with `pi --list-models groq`.
+name = "pi-groq"
+harness = "pi"
+model = "groq/openai/gpt-oss-120b"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "groq"
+thinking = "high"

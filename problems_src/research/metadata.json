@@ -1,0 +1,320 @@
+{
+  "source": "problems_src/research",
+  "schema": "rlb.research/1",
+  "timeout_s": 14400,
+  "note": "Paper tasks have no Rocq reference yet; their statements are checked on small instances by tests/test_research*.py. Generated algebra tasks are uncalibrated controls. Existing sandbox/network policy is unchanged.",
+  "sources": {
+    "binary": {
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i4p39",
+      "doi": "10.37236/12312",
+      "title": "Non-Standard Binary Representations and the Stern Sequence",
+      "authors": [
+        "Katie Anders",
+        "Madeline Locus Dawsey",
+        "Rajat Gupta",
+        "Joseph Vandehey"
+      ],
+      "version": "Published 2024-11-15"
+    },
+    "parking": {
+      "url": "https://arxiv.org/abs/2412.11222v2",
+      "title": "A Short Proof that the number of (a,b)-parking functions of length n is a(a+bn)^(n-1)",
+      "authors": [
+        "AJ Bu",
+        "Doron Zeilberger"
+      ],
+      "version": "v2"
+    },
+    "equations": {
+      "url": "https://teorth.github.io/equational_theories/",
+      "note": "Methodological inspiration only; these concrete expressions are generated locally."
+    },
+    "lucky": {
+      "url": "https://arxiv.org/abs/2306.13065v1",
+      "title": "Lucky Cars and the Quicksort Algorithm",
+      "authors": [
+        "Pamela E. Harris",
+        "Jan Kretschmann",
+        "J. Carlos Martínez Mori"
+      ],
+      "version": "v1 (Amer. Math. Monthly 2024)"
+    },
+    "defant_short_proofs": {
+      "url": "https://arxiv.org/abs/2605.19979v3",
+      "title": "Short Proofs in Algebraic and Enumerative Combinatorics",
+      "authors": [
+        "Colin Defant"
+      ],
+      "version": "v3"
+    },
+    "pan_cyclic": {
+      "url": "https://arxiv.org/abs/2505.02045v1",
+      "title": "On two conjectures about pattern avoidance of cyclic permutations",
+      "authors": [
+        "Junyao Pan"
+      ],
+      "version": "v1"
+    },
+    "zhang_zhao_cyclic": {
+      "url": "https://arxiv.org/abs/2603.06269v1",
+      "title": "On a question about pattern avoidance of cyclic permutations",
+      "authors": [
+        "Zuo-Ru Zhang",
+        "Hongkuan Zhao"
+      ],
+      "version": "v1"
+    },
+    "vacillating": {
+      "url": "https://arxiv.org/abs/2402.02538v2",
+      "title": "Vacillating parking functions",
+      "authors": [
+        "Bruce Fang",
+        "Pamela E. Harris",
+        "Brian M. Kamau",
+        "David Wang"
+      ],
+      "version": "v2"
+    },
+    "fib_signed": {
+      "url": "https://arxiv.org/abs/2604.15446v1",
+      "title": "Non-standard Zeckendorf decompositions; or, Tribonacci within Fibonacci",
+      "authors": [
+        "Katie Anders",
+        "Madeline L. Dawsey",
+        "Joseph Vandehey"
+      ],
+      "version": "v1"
+    },
+    "quaternary": {
+      "url": "https://arxiv.org/abs/2505.04589v1",
+      "title": "Non-standard quaternary representations and the Fibonacci numbers",
+      "authors": [
+        "Katie Anders",
+        "Madeline L. Dawsey",
+        "Rajat Gupta",
+        "Noah Lebowitz-Lockard",
+        "Joseph Vandehey"
+      ],
+      "version": "v1"
+    },
+    "oeis_ten": {
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL29/Fried/fried21.pdf",
+      "title": "Proofs of Ten Conjectures From the OEIS",
+      "authors": [
+        "Sela Fried"
+      ],
+      "version": "Journal of Integer Sequences 29 (2026), Article 26.1.8"
+    },
+    "hofstadter3": {
+      "url": "https://arxiv.org/abs/2406.00904v1",
+      "title": "The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions",
+      "authors": [
+        "Nathan Fox"
+      ],
+      "version": "v1; Journal of Integer Sequences 27 (2024), Article 24.7.4"
+    },
+    "comma": {
+      "url": "https://arxiv.org/abs/2408.03434v2",
+      "title": "The Comma Sequence is Finite in Other Bases",
+      "authors": [
+        "Robert Dougherty-Bliss",
+        "Natalya Ter-Saakov"
+      ],
+      "version": "v2; Journal of Integer Sequences 28 (2025), Article 25.5.5"
+    }
+  },
+  "prescreen": {
+    "date": "2026-09-09",
+    "method": "Light web searches and local installed Rocq source search; no exhaustive repository or literature audit.",
+    "queries": [
+      "\"parking functions\" \"Coq\" \"Rocq\"",
+      "\"Non-standard binary representations\" Lean Coq",
+      "\"Stern\" \"hyperbinary\" \"Coq\"",
+      "\"parking functions\" Lean formalization",
+      "\"Stern\" \"sequence\" \"Lean\" formalization"
+    ],
+    "result": "No exact Rocq formalization surfaced. Absence is not established. Informal paper proofs are public. Generated medial identities are consequences of a standard law, not claimed mathematically novel.",
+    "audit": "Record proof reuse from any prover in agent log review."
+  },
+  "problems": {
+    "short_bsd_stern": {
+      "domain": "combinatorics",
+      "family": "nonstandard_representations",
+      "source": "binary",
+      "result": "Theorem 2",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "short_bsd_hyperbinary": {
+      "domain": "combinatorics",
+      "family": "nonstandard_representations",
+      "source": "binary",
+      "result": "Theorem 3, shifted to short(S n) = hyperbinary(n)",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "parking_count": {
+      "domain": "combinatorics",
+      "family": "parking_functions",
+      "source": "parking",
+      "result": "Main counting formula; explicit empty-list boundary case",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "medial_walk_01": {
+      "domain": "equational_theories",
+      "family": "medial_1",
+      "seed": 20260909,
+      "walk_steps": 32,
+      "reference": "generated, kernel checked on import",
+      "status": "known_true",
+      "difficulty": "uncalibrated"
+    },
+    "medial_countermodel_01": {
+      "domain": "equational_theories",
+      "family": "medial_1",
+      "seed": 20260909,
+      "swapped_leaf_paths": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "reference": "three-element countermodel, kernel checked on import",
+      "status": "known_counterexample",
+      "difficulty": "calibration control"
+    },
+    "medial_walk_02": {
+      "domain": "equational_theories",
+      "family": "medial_2",
+      "seed": 20260910,
+      "walk_steps": 32,
+      "reference": "generated, kernel checked on import",
+      "status": "known_true",
+      "difficulty": "uncalibrated"
+    },
+    "medial_countermodel_02": {
+      "domain": "equational_theories",
+      "family": "medial_2",
+      "seed": 20260910,
+      "swapped_leaf_paths": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "reference": "three-element countermodel, kernel checked on import",
+      "status": "known_counterexample",
+      "difficulty": "calibration control"
+    },
+    "lucky_one_unlucky": {
+      "domain": "combinatorics",
+      "family": "lucky_cars",
+      "source": "lucky",
+      "result": "Theorem 1 (L_n = total quicksort comparisons), extended to all n",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "parking_exced_des": {
+      "domain": "combinatorics",
+      "family": "parking_statistics",
+      "source": "defant_short_proofs",
+      "result": "Theorem 3.1, coefficientwise",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "cyclic_4321_213_fib": {
+      "domain": "combinatorics",
+      "family": "cyclic_pattern_avoidance",
+      "source": "pan_cyclic",
+      "result": "Corollary 3.6, size n+2",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "cyclic_rot1432_4321": {
+      "domain": "combinatorics",
+      "family": "cyclic_pattern_avoidance",
+      "source": "zhang_zhao_cyclic",
+      "result": "Theorem 1.2, extended from n>=5 to n>=3",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "vpf_nonincreasing": {
+      "domain": "combinatorics",
+      "family": "vacillating_parking",
+      "source": "vacillating",
+      "result": "Theorem 3.6 with v(0)=1",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "fib_signed_zero_trib": {
+      "domain": "number_theory",
+      "family": "nonstandard_representations",
+      "source": "fib_signed",
+      "result": "Theorem 1.1, extended to k=0 with the empty list",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "quaternary_shift": {
+      "domain": "number_theory",
+      "family": "nonstandard_representations",
+      "source": "quaternary",
+      "result": "Theorem 1.2 (equality on the interval, j >= 1); sharpness omitted",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "digit_insert_rank": {
+      "domain": "number_theory",
+      "family": "oeis_conjectures",
+      "source": "oeis_ten",
+      "result": "Theorem 6 (A007953, Marcus)",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "hofstadter3_death": {
+      "domain": "number_theory",
+      "family": "nested_recurrences",
+      "source": "hofstadter3",
+      "result": "Theorem 1, second sentence (N >= 14 gives N+24 terms)",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    },
+    "comma_danger_count": {
+      "domain": "number_theory",
+      "family": "comma_sequences",
+      "source": "comma",
+      "result": "Theorem 2 as partial sums, with m >= 3 (the stated m >= 2 is false)",
+      "status": "published_informal_proof",
+      "reference": null,
+      "difficulty": "uncalibrated"
+    }
+  }
+}

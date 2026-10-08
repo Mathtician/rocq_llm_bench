@@ -1,0 +1,9 @@
+# Gemma 4 31B on Cerebras: ~1500 tok/s, the other model on Cerebras's standard tier.
+name = "pi-cerebras-gemma4"
+harness = "pi"
+model = "cerebras/gemma-4-31b"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "cerebras"
+thinking = "medium"

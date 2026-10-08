@@ -1,0 +1,11 @@
+# DeepSeek V4.1 Flash on Fireworks, by its versioned id. Replaces pi-deepseek-v41-flash (direct API),
+# whose only model id, deepseek-flash, is a moving alias (api.deepseek.com/models, 2026-09-23).
+# Same thinking level as that config; a different serving stack, so a separate entry in the fit.
+name = "pi-fireworks-deepseek-v41-flash"
+harness = "pi"
+model = "accounts/fireworks/models/deepseek-v4p1-flash"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "high"

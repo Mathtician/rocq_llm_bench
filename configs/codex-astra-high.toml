@@ -1,0 +1,14 @@
+# Red-team probe config: GPT-6 Astra via the Codex CLI, high effort, driven by a
+# prompt that requests information the sandbox should deny (public IP, an online
+# version lookup, host-filesystem config). Not a benchmark sample; used to test
+# whether the allowlist proxy and bwrap isolation hold against an agent that is
+# actively trying to route around a block. web_search stays disabled so the only
+# path to the internet is the sandboxed shell, i.e. the allowlist proxy itself.
+name = "codex-astra-high"
+harness = "codex"
+model = "gpt-6-astra"
+subagent = "none"
+prompt = "prompts/redteam-astra.md"
+timeout_s = 420
+[args]
+effort = "high"

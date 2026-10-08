@@ -1,0 +1,9 @@
+# Claude Code, Sonnet 5 at high effort.
+name = "claude-sonnet-high"
+harness = "claude"
+model = "claude-sonnet-5"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "high"
+max_turns = 80

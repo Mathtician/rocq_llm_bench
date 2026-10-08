@@ -1,0 +1,9 @@
+# Kimi K3 on Baseten: sub-2s first token there vs. 3-4s on Fireworks in our captures.
+name = "pi-baseten-kimi"
+harness = "pi"
+model = "moonshotai/Kimi-K3"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "baseten"
+thinking = "medium"

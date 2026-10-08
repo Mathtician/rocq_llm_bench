@@ -1,0 +1,9 @@
+# Claude Code, Sonnet 5 at medium effort: stall test.
+name = "claude-sonnet-medium"
+harness = "claude"
+model = "claude-sonnet-5"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "medium"
+max_turns = 80

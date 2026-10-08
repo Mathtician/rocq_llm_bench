@@ -1,0 +1,8 @@
+# Codex CLI, GPT-6 Astra at low reasoning effort (ChatGPT plan; "2x speed" Fast tier not used).
+name = "codex-astra-low"
+harness = "codex"
+model = "gpt-6-astra"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "low"

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Commit-time invariants (see README "The log"): log/entries.jsonl only grows,
+# results/ and log/patches/ only gain files. Enable with
+#   git config core.hooksPath .githooks
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+exec uv run rlb log verify --staged

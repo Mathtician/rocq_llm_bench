@@ -1,0 +1,1326 @@
+{
+  "rocq": "The Rocq Prover, version 9.1.1",
+  "tiers": {
+    "putnam": {
+      "source": "vendor/Putnam2025-Rocq",
+      "commit": "9e221268d01232e18b6c11822ea2b26463ae6ddd",
+      "timeout_s": 3600
+    },
+    "imo": {
+      "source": "vendor/miniF2F-rocq",
+      "commit": "d9480b5e4711a4a8e8334dad3ef2e72c2ec0efdd",
+      "prefix": "imo",
+      "references": "problems_src/minif2f (verified benchmark solutions)",
+      "audit": {
+        "imo_1959_p1": "faithful",
+        "imo_1960_p2": "weakened",
+        "imo_1962_p2": "weakened",
+        "imo_1963_p5": "faithful",
+        "imo_1964_p2": "faithful",
+        "imo_1968_p5_1": "faithful",
+        "imo_1974_p3": "faithful",
+        "imo_1977_p6": "faithful",
+        "imo_1981_p6": "weakened",
+        "imo_1982_p1": "faithful",
+        "imo_1983_p6": "weakened",
+        "imo_1984_p6": "faithful",
+        "imo_1992_p1": "faithful",
+        "imo_1997_p5": "faithful",
+        "imo_2001_p6": "faithful",
+        "imo_2019_p1": "faithful",
+        "imo_1961_p1": "weakened",
+        "imo_1962_p4": "weakened",
+        "imo_1964_p1_1": "weakened",
+        "imo_1964_p1_2": "faithful",
+        "imo_1965_p1": "weakened",
+        "imo_1967_p3": "weakened",
+        "imo_1973_p3": "weakened",
+        "imo_1974_p5": "weakened",
+        "imo_1977_p5": "faithful",
+        "imo_1978_p5": "faithful",
+        "imo_1984_p2": "weakened",
+        "imo_1987_p4": "faithful",
+        "imo_1988_p6": "faithful",
+        "imo_1990_p3": "faithful",
+        "imo_1993_p5": "faithful",
+        "imo_2006_p3": "weakened"
+      }
+    },
+    "aime": {
+      "source": "vendor/miniF2F-rocq",
+      "commit": "d9480b5e4711a4a8e8334dad3ef2e72c2ec0efdd",
+      "prefix": "aime",
+      "references": "problems_src/minif2f (verified benchmark solutions)",
+      "audit": {
+        "aime_1983_p1": "faithful",
+        "aime_1983_p2": "weakened",
+        "aime_1983_p3": "faithful",
+        "aime_1984_p1": "faithful",
+        "aime_1984_p7": "faithful",
+        "aime_1987_p5": "faithful",
+        "aime_1988_p8": "faithful",
+        "aime_1989_p8": "faithful",
+        "aime_1990_p15": "faithful",
+        "aime_1990_p4": "faithful",
+        "aime_1991_p9": "faithful",
+        "aime_1994_p3": "faithful",
+        "aime_1995_p7": "faithful",
+        "aime_1997_p9": "faithful",
+        "aime_1983_p9": "weakened",
+        "aime_1984_p15": "faithful",
+        "aime_1984_p5": "faithful",
+        "aime_1987_p8": "weakened",
+        "aime_1988_p3": "faithful",
+        "aime_1988_p4": "weakened",
+        "aime_1991_p1": "faithful"
+      }
+    },
+    "custom": {
+      "source": "problems_src/custom"
+    },
+    "research": {
+      "source": "problems_src/research",
+      "schema": "rlb.research/1",
+      "timeout_s": 14400,
+      "note": "Paper tasks have no Rocq reference yet; their statements are checked on small instances by tests/test_research*.py. Generated algebra tasks are uncalibrated controls. Existing sandbox/network policy is unchanged.",
+      "sources": {
+        "binary": {
+          "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i4p39",
+          "doi": "10.37236/12312",
+          "title": "Non-Standard Binary Representations and the Stern Sequence",
+          "authors": [
+            "Katie Anders",
+            "Madeline Locus Dawsey",
+            "Rajat Gupta",
+            "Joseph Vandehey"
+          ],
+          "version": "Published 2024-11-15"
+        },
+        "parking": {
+          "url": "https://arxiv.org/abs/2412.11222v2",
+          "title": "A Short Proof that the number of (a,b)-parking functions of length n is a(a+bn)^(n-1)",
+          "authors": [
+            "AJ Bu",
+            "Doron Zeilberger"
+          ],
+          "version": "v2"
+        },
+        "equations": {
+          "url": "https://teorth.github.io/equational_theories/",
+          "note": "Methodological inspiration only; these concrete expressions are generated locally."
+        },
+        "lucky": {
+          "url": "https://arxiv.org/abs/2306.13065v1",
+          "title": "Lucky Cars and the Quicksort Algorithm",
+          "authors": [
+            "Pamela E. Harris",
+            "Jan Kretschmann",
+            "J. Carlos Martínez Mori"
+          ],
+          "version": "v1 (Amer. Math. Monthly 2024)"
+        },
+        "defant_short_proofs": {
+          "url": "https://arxiv.org/abs/2605.19979v3",
+          "title": "Short Proofs in Algebraic and Enumerative Combinatorics",
+          "authors": [
+            "Colin Defant"
+          ],
+          "version": "v3"
+        },
+        "pan_cyclic": {
+          "url": "https://arxiv.org/abs/2505.02045v1",
+          "title": "On two conjectures about pattern avoidance of cyclic permutations",
+          "authors": [
+            "Junyao Pan"
+          ],
+          "version": "v1"
+        },
+        "zhang_zhao_cyclic": {
+          "url": "https://arxiv.org/abs/2603.06269v1",
+          "title": "On a question about pattern avoidance of cyclic permutations",
+          "authors": [
+            "Zuo-Ru Zhang",
+            "Hongkuan Zhao"
+          ],
+          "version": "v1"
+        },
+        "vacillating": {
+          "url": "https://arxiv.org/abs/2402.02538v2",
+          "title": "Vacillating parking functions",
+          "authors": [
+            "Bruce Fang",
+            "Pamela E. Harris",
+            "Brian M. Kamau",
+            "David Wang"
+          ],
+          "version": "v2"
+        },
+        "fib_signed": {
+          "url": "https://arxiv.org/abs/2604.15446v1",
+          "title": "Non-standard Zeckendorf decompositions; or, Tribonacci within Fibonacci",
+          "authors": [
+            "Katie Anders",
+            "Madeline L. Dawsey",
+            "Joseph Vandehey"
+          ],
+          "version": "v1"
+        },
+        "quaternary": {
+          "url": "https://arxiv.org/abs/2505.04589v1",
+          "title": "Non-standard quaternary representations and the Fibonacci numbers",
+          "authors": [
+            "Katie Anders",
+            "Madeline L. Dawsey",
+            "Rajat Gupta",
+            "Noah Lebowitz-Lockard",
+            "Joseph Vandehey"
+          ],
+          "version": "v1"
+        },
+        "oeis_ten": {
+          "url": "https://cs.uwaterloo.ca/journals/JIS/VOL29/Fried/fried21.pdf",
+          "title": "Proofs of Ten Conjectures From the OEIS",
+          "authors": [
+            "Sela Fried"
+          ],
+          "version": "Journal of Integer Sequences 29 (2026), Article 26.1.8"
+        },
+        "hofstadter3": {
+          "url": "https://arxiv.org/abs/2406.00904v1",
+          "title": "The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions",
+          "authors": [
+            "Nathan Fox"
+          ],
+          "version": "v1; Journal of Integer Sequences 27 (2024), Article 24.7.4"
+        },
+        "comma": {
+          "url": "https://arxiv.org/abs/2408.03434v2",
+          "title": "The Comma Sequence is Finite in Other Bases",
+          "authors": [
+            "Robert Dougherty-Bliss",
+            "Natalya Ter-Saakov"
+          ],
+          "version": "v2; Journal of Integer Sequences 28 (2025), Article 25.5.5"
+        }
+      },
+      "prescreen": {
+        "date": "2026-09-09",
+        "method": "Light web searches and local installed Rocq source search; no exhaustive repository or literature audit.",
+        "queries": [
+          "\"parking functions\" \"Coq\" \"Rocq\"",
+          "\"Non-standard binary representations\" Lean Coq",
+          "\"Stern\" \"hyperbinary\" \"Coq\"",
+          "\"parking functions\" Lean formalization",
+          "\"Stern\" \"sequence\" \"Lean\" formalization"
+        ],
+        "result": "No exact Rocq formalization surfaced. Absence is not established. Informal paper proofs are public. Generated medial identities are consequences of a standard law, not claimed mathematically novel.",
+        "audit": "Record proof reuse from any prover in agent log review."
+      },
+      "problems": {
+        "short_bsd_stern": {
+          "domain": "combinatorics",
+          "family": "nonstandard_representations",
+          "source": "binary",
+          "result": "Theorem 2",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "short_bsd_hyperbinary": {
+          "domain": "combinatorics",
+          "family": "nonstandard_representations",
+          "source": "binary",
+          "result": "Theorem 3, shifted to short(S n) = hyperbinary(n)",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "parking_count": {
+          "domain": "combinatorics",
+          "family": "parking_functions",
+          "source": "parking",
+          "result": "Main counting formula; explicit empty-list boundary case",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "medial_walk_01": {
+          "domain": "equational_theories",
+          "family": "medial_1",
+          "seed": 20260909,
+          "walk_steps": 32,
+          "reference": "generated, kernel checked on import",
+          "status": "known_true",
+          "difficulty": "uncalibrated"
+        },
+        "medial_countermodel_01": {
+          "domain": "equational_theories",
+          "family": "medial_1",
+          "seed": 20260909,
+          "swapped_leaf_paths": [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "reference": "three-element countermodel, kernel checked on import",
+          "status": "known_counterexample",
+          "difficulty": "calibration control"
+        },
+        "medial_walk_02": {
+          "domain": "equational_theories",
+          "family": "medial_2",
+          "seed": 20260910,
+          "walk_steps": 32,
+          "reference": "generated, kernel checked on import",
+          "status": "known_true",
+          "difficulty": "uncalibrated"
+        },
+        "medial_countermodel_02": {
+          "domain": "equational_theories",
+          "family": "medial_2",
+          "seed": 20260910,
+          "swapped_leaf_paths": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "reference": "three-element countermodel, kernel checked on import",
+          "status": "known_counterexample",
+          "difficulty": "calibration control"
+        },
+        "lucky_one_unlucky": {
+          "domain": "combinatorics",
+          "family": "lucky_cars",
+          "source": "lucky",
+          "result": "Theorem 1 (L_n = total quicksort comparisons), extended to all n",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "parking_exced_des": {
+          "domain": "combinatorics",
+          "family": "parking_statistics",
+          "source": "defant_short_proofs",
+          "result": "Theorem 3.1, coefficientwise",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "cyclic_4321_213_fib": {
+          "domain": "combinatorics",
+          "family": "cyclic_pattern_avoidance",
+          "source": "pan_cyclic",
+          "result": "Corollary 3.6, size n+2",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "cyclic_rot1432_4321": {
+          "domain": "combinatorics",
+          "family": "cyclic_pattern_avoidance",
+          "source": "zhang_zhao_cyclic",
+          "result": "Theorem 1.2, extended from n>=5 to n>=3",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "vpf_nonincreasing": {
+          "domain": "combinatorics",
+          "family": "vacillating_parking",
+          "source": "vacillating",
+          "result": "Theorem 3.6 with v(0)=1",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "fib_signed_zero_trib": {
+          "domain": "number_theory",
+          "family": "nonstandard_representations",
+          "source": "fib_signed",
+          "result": "Theorem 1.1, extended to k=0 with the empty list",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "quaternary_shift": {
+          "domain": "number_theory",
+          "family": "nonstandard_representations",
+          "source": "quaternary",
+          "result": "Theorem 1.2 (equality on the interval, j >= 1); sharpness omitted",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "digit_insert_rank": {
+          "domain": "number_theory",
+          "family": "oeis_conjectures",
+          "source": "oeis_ten",
+          "result": "Theorem 6 (A007953, Marcus)",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "hofstadter3_death": {
+          "domain": "number_theory",
+          "family": "nested_recurrences",
+          "source": "hofstadter3",
+          "result": "Theorem 1, second sentence (N >= 14 gives N+24 terms)",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        },
+        "comma_danger_count": {
+          "domain": "number_theory",
+          "family": "comma_sequences",
+          "source": "comma",
+          "result": "Theorem 2 as partial sums, with m >= 3 (the stated m >= 2 is false)",
+          "status": "published_informal_proof",
+          "reference": null,
+          "difficulty": "uncalibrated"
+        }
+      }
+    }
+  },
+  "problems": [
+    {
+      "name": "putnam_2025_a1",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 Problem A1\n\n    Let m₀ and n₀ be distinct positive integers. For every positive\n    integer k, define mₖ and nₖ to be the relatively prime positive\n    integers such that mₖ/nₖ = (2·m_{k-1}+1)/(2·n_{k-1}+1).\n    Prove that 2·mₖ+1 and 2·nₖ+1 are relatively prime for all but\n    finitely many k.",
+      "preamble": "*)\n\nFrom Stdlib Require Import ZArith QArith Arith PeanoNat.\n\nOpen Scope Z_scope.\n\n(** The recurrence: given (m,n), form the rational (2m+1)/(2n+1)\n    in lowest terms.  The numerator and denominator of Qred give\n    the coprime pair (m', n'). *)\n\nDefinition step (m n : Z) : Q :=\n  Qred (Qmake (2 * m + 1) (Z.to_pos (2 * n + 1))).",
+      "statement": "Theorem putnam_2025_a1 :\n  forall (m n : nat -> Z),\n    (* m 0 and n 0 are distinct positive integers *)\n    (0 < m 0%nat)%Z ->\n    (0 < n 0%nat)%Z ->\n    m 0%nat <> n 0%nat ->\n    (* Recurrence: (m(k+1), n(k+1)) is the reduced form of\n       (2*m(k)+1) / (2*n(k)+1) *)\n    (forall k, 0 < 2 * n k + 1) ->\n    (forall k, Qnum (step (m k) (n k)) = m (S k)) ->\n    (forall k, Z.pos (Qden (step (m k) (n k))) = n (S k)) ->\n    (* Conclusion: there exists N such that for all k >= N,\n       gcd(2*m(k)+1, 2*n(k)+1) = 1 *)\n    exists N : nat, forall k, (k >= N)%nat ->\n      Z.gcd (2 * m k + 1) (2 * n k + 1) = 1.",
+      "file": "putnam/putnam_2025_a1.v",
+      "ref_check_s": 1.3664106840151362,
+      "ref_proof_lines": 305
+    },
+    {
+      "name": "putnam_2025_a2",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 Problem A2\n\n    Find the largest a and smallest b such that\n      a * x * (pi - x) <= sin x <= b * x * (pi - x)\n    for all x in [0, pi].\n\n    Answer: a = 1/pi, b = 4/pi^2.",
+      "preamble": "*)\n\nFrom Stdlib Require Import Reals Lra.\n\nOpen Scope R_scope.",
+      "statement": "Theorem putnam_2025_a2 :\n  (* Part 1: a = 1/PI is the greatest lower coefficient *)\n  (forall x, 0 <= x <= PI -> (1 / PI) * x * (PI - x) <= sin x) /\\\n  (forall a, (forall x, 0 <= x <= PI -> a * x * (PI - x) <= sin x) ->\n             a <= 1 / PI)\n  /\\\n  (* Part 2: b = 4/PI^2 is the least upper coefficient *)\n  (forall x, 0 <= x <= PI -> sin x <= (4 / PI ^ 2) * x * (PI - x)) /\\\n  (forall b, (forall x, 0 <= x <= PI -> sin x <= b * x * (PI - x)) ->\n             4 / PI ^ 2 <= b).",
+      "file": "putnam/putnam_2025_a2.v",
+      "ref_check_s": 1.7227585809887387,
+      "ref_proof_lines": 308
+    },
+    {
+      "name": "putnam_2025_a4",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 Problem A4\n\n    Find the minimal value of k such that there exist k-by-k real\n    matrices A_1, ..., A_2025 with A_i * A_j = A_j * A_i iff\n    |i - j| ∈ {0, 1, 2024}.",
+      "preamble": "Answer: k = 3. *)\n\nFrom Stdlib Require Import Reals ZArith.\nOpen Scope R_scope.\n\n(** Matrix represented as a function nat -> nat -> R.\n    Matrix multiplication for k×k matrices. *)\nDefinition mat_mul (k : nat) (A B : nat -> nat -> R) : nat -> nat -> R :=\n  fun i j =>\n    let fix sum_aux (n : nat) : R :=\n      match n with\n      | O => A i O * B O j\n      | S n' => sum_aux n' + A i n * B n j\n      end\n    in match k with\n       | O => 0\n       | S k' => sum_aux k'\n       end.\n\n(** Two k×k matrices are equal (as functions on {0,..,k-1}). *)\nDefinition mat_eq (k : nat) (A B : nat -> nat -> R) : Prop :=\n  forall i j, (i < k)%nat -> (j < k)%nat -> A i j = B i j.\n\n(** The commutativity condition:\n    A_i * A_j = A_j * A_i  iff  |i - j| ∈ {0, 1, 2024}.\n\n    We index A from 0 to 2024 (i.e., Fin 2025 as naturals). *)\nDefinition commute_cond (k : nat) (A : nat -> nat -> nat -> R) : Prop :=\n  forall i j : nat,\n    (i < 2025)%nat -> (j < 2025)%nat ->\n    (mat_eq k (mat_mul k (A i) (A j)) (mat_mul k (A j) (A i))\n     <->\n     (i = j \\/ (Z.abs (Z.of_nat i - Z.of_nat j) = 1)%Z\n            \\/ (Z.abs (Z.of_nat i - Z.of_nat j) = 2024)%Z)).\n\n(** The set of valid k: positive k for which the family exists. *)\nDefinition valid_k (k : nat) : Prop :=\n  (k > 0)%nat /\\ exists A : nat -> nat -> nat -> R, commute_cond k A.\n\n(** Statement: 3 is the least element of valid_k. *)",
+      "statement": "Theorem putnam_2025_a4 :\n  valid_k 3 /\\ (forall k, valid_k k -> (3 <= k)%nat).",
+      "file": "putnam/putnam_2025_a4.v",
+      "ref_check_s": 3.253575415990781,
+      "ref_proof_lines": 531
+    },
+    {
+      "name": "putnam_2025_a6",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 Problem A6\n\n    Let b_0 = 0 and b_{n+1} = 2*b_n^2 + b_n + 1.\n    For each k >= 1, show that b_{2^{k+1}} - 2*b_{2^k}\n    is divisible by 2^{2k+2} but not by 2^{2k+3}.",
+      "preamble": "*)\n\nFrom Stdlib Require Import ZArith.\n\nOpen Scope Z_scope.\n\n(** The recurrence b_{n+1} = 2*b_n^2 + b_n + 1 with b_0 = 0. *)\nFixpoint b (n : nat) : Z :=\n  match n with\n  | O => 0\n  | S n' => 2 * (b n') ^ 2 + b n' + 1\n  end.",
+      "statement": "Theorem putnam_2025_a6 :\n  forall k : nat, (k >= 1)%nat ->\n    (* 2^{2k+2} divides b_{2^{k+1}} - 2 * b_{2^k} *)\n    (2 ^ (Z.of_nat (2 * k + 2)) | b (2 ^ (k + 1))%nat - 2 * b (2 ^ k)%nat) /\\\n    (* but 2^{2k+3} does not *)\n    ~ (2 ^ (Z.of_nat (2 * k + 3)) | b (2 ^ (k + 1))%nat - 2 * b (2 ^ k)%nat).",
+      "file": "putnam/putnam_2025_a6.v",
+      "ref_check_s": 1.5795073350018356,
+      "ref_proof_lines": 897
+    },
+    {
+      "name": "putnam_2025_b1",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 B1 (axiom-free formulation).\n    If every point in the plane is colored red or green, and for every\n    three noncollinear same-color points the circumcenter also has that\n    color, then all points are the same color.\n\n    This version replaces the Parameter/Axiom circumcenter with a",
+      "preamble": "concrete Cramer's-rule construction. *)\n\nFrom Stdlib Require Import Reals.\nOpen Scope R_scope.\n\nDefinition point := (R * R)%type.\n\nDefinition noncollinear (A B C : point) : Prop :=\n  (fst B - fst A) * (snd C - snd A) - (snd B - snd A) * (fst C - fst A) <> 0.\n\nDefinition dist_sq (P Q : point) : R :=\n  (fst P - fst Q)² + (snd P - snd Q)².\n\nDefinition is_circumcenter (A B C O : point) : Prop :=\n  dist_sq O A = dist_sq O B /\\ dist_sq O B = dist_sq O C.\n\nDefinition circumcenter (A B C : point) : point :=\n  let ax := fst A in let ay := snd A in\n  let bx := fst B in let by_ := snd B in\n  let cx := fst C in let cy := snd C in\n  let d := (bx - ax) * (cy - ay) - (by_ - ay) * (cx - ax) in\n  let ux := bx*bx + by_*by_ - ax*ax - ay*ay in\n  let vx := cx*cx + cy*cy - ax*ax - ay*ay in\n  ( ((cy - ay) * ux - (by_ - ay) * vx) / (2 * d),\n    ((bx - ax) * vx - (cx - ax) * ux) / (2 * d) ).",
+      "statement": "Theorem putnam_2025_b1 :\n  forall (color : point -> bool),\n    (forall A B C : point,\n       noncollinear A B C ->\n       color A = color B ->\n       color A = color C ->\n       color A = color (circumcenter A B C)) ->\n    exists c0 : bool, forall P : point, color P = c0.",
+      "file": "putnam/putnam_2025_b1.v",
+      "ref_check_s": 13.192901100002928,
+      "ref_proof_lines": 703
+    },
+    {
+      "name": "putnam_2025_b3",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 B3.\n    If S is a nonempty set of positive integers such that for every n in S,\n    every positive divisor of 2025^n - 15^n is also in S,",
+      "preamble": "then S contains all positive integers. *)\n\nFrom Stdlib Require Import Arith PeanoNat.",
+      "statement": "Theorem putnam_2025_b3 :\n  forall (S : nat -> Prop),\n    (exists n, n > 0 /\\ S n) ->\n    (forall n, S n -> n > 0) ->\n    (forall n, S n ->\n       forall d, d > 0 -> Nat.divide d (2025^n - 15^n) -> S d) ->\n    forall n, n > 0 -> S n.",
+      "file": "putnam/putnam_2025_b3.v",
+      "ref_check_s": 3.440067331015598,
+      "ref_proof_lines": 439
+    },
+    {
+      "name": "putnam_2025_b4",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 Problem B4\n\n    For n ≥ 2, let A be an n×n matrix of nonnegative integers with:\n    (a) a_{i,j} = 0 when i + j ≤ n,\n    (b) a_{i+1,j} ∈ {a_{i,j}, a_{i,j} + 1},\n    (c) a_{i,j+1} ∈ {a_{i,j}, a_{i,j} + 1}.\n    Let S = sum of all entries, N = number of nonzero entries.",
+      "preamble": "Prove 3 * S ≤ (n + 2) * N. *)\n\nFrom Stdlib Require Import Arith Lia.\n\n(** Matrix conditions. Indices are 1-based: i, j ∈ {1, ..., n}. *)\n\nDefinition cond_zero (n : nat) (A : nat -> nat -> nat) : Prop :=\n  forall i j, (1 <= i <= n)%nat -> (1 <= j <= n)%nat ->\n    (i + j <= n)%nat -> A i j = 0.\n\nDefinition cond_row_step (n : nat) (A : nat -> nat -> nat) : Prop :=\n  forall i j, (1 <= i)%nat -> (i < n)%nat -> (1 <= j <= n)%nat ->\n    (A (S i) j = A i j \\/ A (S i) j = A i j + 1).\n\nDefinition cond_col_step (n : nat) (A : nat -> nat -> nat) : Prop :=\n  forall i j, (1 <= i <= n)%nat -> (1 <= j)%nat -> (j < n)%nat ->\n    (A i (S j) = A i j \\/ A i (S j) = A i j + 1).\n\nDefinition matrix_cond (n : nat) (A : nat -> nat -> nat) : Prop :=\n  cond_zero n A /\\ cond_row_step n A /\\ cond_col_step n A.\n\n(** Sum of all entries. *)\nFixpoint sum_row (A : nat -> nat -> nat) (i : nat) (j : nat) : nat :=\n  match j with\n  | O => 0\n  | S j' => sum_row A i j' + A i (S j')\n  end.\n\nFixpoint total_sum (A : nat -> nat -> nat) (i n : nat) : nat :=\n  match i with\n  | O => 0\n  | S i' => total_sum A i' n + sum_row A (S i') n\n  end.\n\nDefinition S_total (n : nat) (A : nat -> nat -> nat) : nat :=\n  total_sum A n n.\n\n(** Count of nonzero entries. *)\nFixpoint count_nonzero_row (A : nat -> nat -> nat) (i : nat) (j : nat) : nat :=\n  match j with\n  | O => 0\n  | S j' => count_nonzero_row A i j' +\n             (if Nat.eqb (A i (S j')) 0 then 0 else 1)\n  end.\n\nFixpoint count_nonzero (A : nat -> nat -> nat) (i n : nat) : nat :=\n  match i with\n  | O => 0\n  | S i' => count_nonzero A i' n + count_nonzero_row A (S i') n\n  end.\n\nDefinition N_nonzero (n : nat) (A : nat -> nat -> nat) : nat :=\n  count_nonzero A n n.\n\n(** Statement: 3 * S ≤ (n + 2) * N. *)",
+      "statement": "Theorem putnam_2025_b4 :\n  forall (n : nat) (A : nat -> nat -> nat),\n    (2 <= n)%nat ->\n    matrix_cond n A ->\n    3 * S_total n A <= (n + 2) * N_nonzero n A.",
+      "file": "putnam/putnam_2025_b4.v",
+      "ref_check_s": 1.310363872005837,
+      "ref_proof_lines": 414
+    },
+    {
+      "name": "putnam_2025_b5",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 Problem B5\n\n    Let p be a prime > 3.  For each k ∈ {1, ..., p-1}, let I(k)\n    be the modular inverse of k mod p (the unique element in\n    {1, ..., p-1} with k * I(k) ≡ 1 (mod p)).\n\n    Prove that\n      #{k ∈ {1, ..., p-2} | I(k+1) < I(k)} > p/4 - 1.\n\n    We work entirely in Z and multiply through to avoid fractions:",
+      "preamble": "4 * count + 4 > p, i.e., 4 * count ≥ p - 3. *)\n\nFrom Stdlib Require Import ZArith Znumtheory List.\nImport ListNotations.\nOpen Scope Z_scope.\n\n(** I(k) is the modular inverse of k mod p, in {1, ..., p-1}. *)\nDefinition is_mod_inverse (p k inv_k : Z) : Prop :=\n  1 <= inv_k <= p - 1 /\\ (k * inv_k) mod p = 1 mod p.\n\n(** Existence and uniqueness of modular inverses for 1 ≤ k ≤ p-1\n    when p is prime.  We take I as a parameter. *)\n\nDefinition valid_inverse_fun (p : Z) (I : Z -> Z) : Prop :=\n  forall k, 1 <= k <= p - 1 -> is_mod_inverse p k (I k).\n\n(** The count of descents:\n    #{k ∈ {1, ..., p-2} | I(k+1) < I(k)}. *)\nDefinition descent_count (p : Z) (I : Z -> Z) : Z :=\n  let indices := List.map Z.of_nat (seq 1 (Z.to_nat (p - 2))) in\n  Z.of_nat (length (filter (fun k => I (k + 1) <? I k) indices)).\n\n(** Statement: the descent count is strictly greater than p/4 - 1,\n    i.e., 4 * count + 4 > p, equivalently 4 * count >= p - 3. *)",
+      "statement": "Theorem putnam_2025_b5 :\n  forall (p : Z) (I : Z -> Z),\n    prime p ->\n    p > 3 ->\n    valid_inverse_fun p I ->\n    4 * descent_count p I >= p - 3.",
+      "file": "putnam/putnam_2025_b5.v",
+      "ref_check_s": 2.420630175009137,
+      "ref_proof_lines": 1455
+    },
+    {
+      "name": "putnam_2025_b6",
+      "tier": "putnam",
+      "domain": "putnam",
+      "imports": "(** Putnam 2025 B6.\n    Find the largest real constant r such that there exists g : N -> N\n    with g(n+1) - g(n) >= g(g(n))^r for all n >= 1.\n    Answer: r = 1/4.\n\n    We state this as: 1/4 is the supremum of the set of r for which",
+      "preamble": "such a g exists. *)\n\nFrom Stdlib Require Import Reals Rpower.\nOpen Scope R_scope.\n\n(** The set of valid exponents. *)\nDefinition valid_exponent (r : R) : Prop :=\n  exists g : nat -> nat,\n    (forall n, (n > 0)%nat -> (g n > 0)%nat) /\\\n    (forall n, (n >= 1)%nat ->\n       INR (g (S n)) - INR (g n) >= Rpower (INR (g (g n))) r).",
+      "statement": "Theorem putnam_2025_b6 :\n  valid_exponent (1/4) /\\\n  forall r, valid_exponent r -> r <= 1/4.",
+      "file": "putnam/putnam_2025_b6.v",
+      "ref_check_s": 2.9094985089905094,
+      "ref_proof_lines": 1132
+    },
+    {
+      "name": "bernoulli",
+      "tier": "custom",
+      "domain": "custom",
+      "imports": "From Stdlib Require Import Reals Lra.\nOpen Scope R_scope.\n\n(* Bernoulli's inequality. *)",
+      "preamble": "",
+      "statement": "Theorem bernoulli (x : R) (n : nat) (hx : -1 <= x) : 1 + INR n * x <= (1 + x) ^ n.",
+      "file": "custom/bernoulli.v",
+      "ref_check_s": 1.3189666180114727,
+      "ref_proof_lines": 9
+    },
+    {
+      "name": "infinitude_primes",
+      "tier": "custom",
+      "domain": "custom",
+      "imports": "From Stdlib Require Import ZArith Znumtheory Lia.\nOpen Scope Z_scope.\n\n(* Z-valued factorial *)",
+      "preamble": "Fixpoint zfact (n : nat) : Z :=\n  match n with\n  | O => 1\n  | S k => Z.of_nat (S k) * zfact k\n  end.\n\n(* There are infinitely many primes: above any n there is a prime. *)",
+      "statement": "Theorem infinitude_primes (n : Z) : exists p, prime p /\\ n < p.",
+      "file": "custom/infinitude_primes.v",
+      "ref_check_s": 0.8149308350111824,
+      "ref_proof_lines": 34
+    },
+    {
+      "name": "pigeonhole",
+      "tier": "custom",
+      "domain": "custom",
+      "imports": "From Stdlib Require Import Arith Lia.\n\n(* Pigeonhole: n+1 pigeons (indices 0..n) in n holes (values 0..n-1). *)",
+      "preamble": "",
+      "statement": "Theorem pigeonhole (n : nat) (f : nat -> nat) (hf : forall i, i <= n -> f i < n) :\n  exists i j, i < j /\\ j <= n /\\ f i = f j.",
+      "file": "custom/pigeonhole.v",
+      "ref_check_s": 0.8750301879772451,
+      "ref_proof_lines": 48
+    },
+    {
+      "name": "prime_divisor",
+      "tier": "custom",
+      "domain": "custom",
+      "imports": "From Stdlib Require Import ZArith Znumtheory Lia.\nOpen Scope Z_scope.\n\n(* Every integer >= 2 has a prime divisor. *)",
+      "preamble": "",
+      "statement": "Theorem prime_divisor (n : Z) (hn : 2 <= n) : exists p, prime p /\\ (p | n).",
+      "file": "custom/prime_divisor.v",
+      "ref_check_s": 0.8023259649926331,
+      "ref_proof_lines": 11
+    },
+    {
+      "name": "sqrt2_irrational",
+      "tier": "custom",
+      "domain": "custom",
+      "imports": "From Stdlib Require Import Reals Lra ZArith Lia.\nOpen Scope R_scope.\n\n(* The square root of 2 is irrational. *)",
+      "preamble": "",
+      "statement": "Theorem sqrt2_irrational (p q : Z) (hq : (0 < q)%Z) : IZR p / IZR q <> sqrt 2.",
+      "file": "custom/sqrt2_irrational.v",
+      "ref_check_s": 1.4663415740069468,
+      "ref_proof_lines": 27
+    },
+    {
+      "name": "telescoping",
+      "tier": "custom",
+      "domain": "custom",
+      "imports": "From Stdlib Require Import Reals Lra Lia.\nOpen Scope R_scope.\n\n(* sum_{k=1}^{n} 1/(k(k+1)) *)",
+      "preamble": "Fixpoint tsum (n : nat) : R :=\n  match n with\n  | O => 0\n  | S k => tsum k + 1 / (INR (S k) * INR (S (S k)))\n  end.",
+      "statement": "Theorem telescoping (n : nat) : tsum n = INR n / INR (S n).",
+      "file": "custom/telescoping.v",
+      "ref_check_s": 1.3220411450020038,
+      "ref_proof_lines": 7
+    },
+    {
+      "name": "imo_1959_p1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Nat.\nRequire Import Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1959_p1 :\n  forall n : nat, gcd (21 * n + 4) (14 * n + 3) = 1.",
+      "file": "imo/imo_1959_p1.v",
+      "ref_check_s": 0.7097950510069495,
+      "ref_proof_lines": 21
+    },
+    {
+      "name": "imo_1960_p2",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1960_p2 :\n  forall (x : R),\n  (0 <= 1 + 2 * x) ->\n  (1 - sqrt (1 + 2 * x))^2 <> 0 ->\n  (4 * x^2) / (1 - sqrt (1 + 2 * x))^2 < 2 * x + 9 ->\n  - (1 / 2) <= x /\\ x < 45 / 8.",
+      "file": "imo/imo_1960_p2.v",
+      "ref_check_s": 1.353323350995197,
+      "ref_proof_lines": 30
+    },
+    {
+      "name": "imo_1962_p2",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1962_p2 :\n  forall x : R,\n  0 <= 3 - x ->\n  0 <= x + 1 ->\n  1/2 < sqrt (sqrt (3 - x) - sqrt (x + 1)) ->\n  -1 <= x /\\ x < 1 - sqrt 127 / 32.",
+      "file": "imo/imo_1962_p2.v",
+      "ref_check_s": 1.3617439939989708,
+      "ref_proof_lines": 30
+    },
+    {
+      "name": "imo_1963_p5",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1963_p5 :\n  cos (PI / 7) - cos (2 * PI / 7) + cos (3 * PI / 7) = 1 / 2.",
+      "file": "imo/imo_1963_p5.v",
+      "ref_check_s": 1.4201611909957137,
+      "ref_proof_lines": 60
+    },
+    {
+      "name": "imo_1964_p2",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1964_p2:\n  forall (a b c : R),\n    0 < a /\\ 0 < b /\\ 0 < c ->\n    c < a + b ->\n    b < a + c ->\n    a < b + c ->\n    a² * (b + c - a) + b² * (c + a - b) + c² * (a + b - c) <= 3 * a * b * c.",
+      "file": "imo/imo_1964_p2.v",
+      "ref_check_s": 1.3345601539913332,
+      "ref_proof_lines": 27
+    },
+    {
+      "name": "imo_1968_p5_1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1968_p5_1 :\n  forall (a : R) (f : R -> R),\n  0 < a ->\n  (forall x, f (x + a) = 1 / 2 + sqrt (f x - (f x)^2)) ->\n  exists b : R, b > 0 /\\ forall x, f (x + b) = f x.",
+      "file": "imo/imo_1968_p5_1.v",
+      "ref_check_s": 1.3624619989859639,
+      "ref_proof_lines": 78
+    },
+    {
+      "name": "imo_1974_p3",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.\nRequire Import List.",
+      "preamble": "Fixpoint binom (n k : nat) : nat :=\n  match n, k with\n  | 0, 0 => 1\n  | 0, S _ => 0\n  | S _, 0 => 1\n  | S n', S k' => binom n' k' + binom n' (S k')\n  end.\n\nDefinition f (n k : nat) : nat := binom (2 * n + 1) (2 * k + 1) * 2 ^ (3 * k).",
+      "statement": "Theorem imo_1974_p3 :\n  forall (n : nat),\n  ~ Nat.divide 5 (fold_left plus (map (f n) (seq 0 (S n))) 0).",
+      "file": "imo/imo_1974_p3.v",
+      "ref_check_s": 1.477131306004594,
+      "ref_proof_lines": 308
+    },
+    {
+      "name": "imo_1977_p6",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.\nRequire Import PeanoNat.",
+      "preamble": "",
+      "statement": "Theorem imo_1977_p6 (f : nat -> nat)\n  (h₀ : forall n, 0 < f n)\n  (h₁ : forall n, 0 < n -> f (f n) < f (S n)) :\n  forall n, 0 < n -> f n = n.",
+      "file": "imo/imo_1977_p6.v",
+      "ref_check_s": 0.7232955840008799,
+      "ref_proof_lines": 63
+    },
+    {
+      "name": "imo_1981_p6",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import PeanoNat.",
+      "preamble": "",
+      "statement": "Theorem imo_1981_p6\n  (f : nat -> nat -> nat)\n  (h0 : forall y, f 0 y = y + 1)\n  (h1 : forall x, f (S x) 0 = f x 1)\n  (h2 : forall x y, f (S x) (S y) = f x (f (S x) y)) :\n  forall y, f 4 (S y) = 2^(f 4 y + 3) - 3.",
+      "file": "imo/imo_1981_p6.v",
+      "ref_check_s": 0.7191244190034922,
+      "ref_proof_lines": 33
+    },
+    {
+      "name": "imo_1982_p1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1982_p1:\n  forall (f : nat -> nat),\n  (forall m n, 0 < m -> 0 < n ->\n    (f (m + n) = f m + f n \\/ f (m + n) = f m + f n + 1)) ->\n  f 2 = 0 ->\n  0 < f 3 ->\n  f 9999 = 3333 ->\n  f 1982 = 660.",
+      "file": "imo/imo_1982_p1.v",
+      "ref_check_s": 1.8867397610010812,
+      "ref_proof_lines": 78
+    },
+    {
+      "name": "imo_1983_p6",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1983_p6 : \n  forall (a b c : R),\n  (0 < a /\\ 0 < b /\\ 0 < c) ->\n  c < a + b ->\n  b < a + c ->\n  a < b + c ->\n  0 <= a^2 * b * (a - b) + b^2 * c * (b - c) + c^2 * a * (c - a).",
+      "file": "imo/imo_1983_p6.v",
+      "ref_check_s": 1.3164712110010441,
+      "ref_proof_lines": 43
+    },
+    {
+      "name": "imo_1984_p6",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1984_p6\n  (a b c d k m : nat)\n  (H0 : 0 < a /\\ 0 < b /\\ 0 < c /\\ 0 < d)\n  (H1 : Nat.Odd a /\\ Nat.Odd b /\\ Nat.Odd c /\\ Nat.Odd d)\n  (H2 : a < b /\\ b < c /\\ c < d)\n  (H3 : a * d = b * c)\n  (H4 : a + d = 2 ^ k)\n  (H5 : b + c = 2 ^ m) :\n  a = 1.",
+      "file": "imo/imo_1984_p6.v",
+      "ref_check_s": 1.435657222988084,
+      "ref_proof_lines": 83
+    },
+    {
+      "name": "imo_1992_p1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import ZArith.\nOpen Scope Z_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1992_p1 :\n  forall p q r : Z,\n  1 < p -> p < q -> q < r ->\n  ((p - 1) * (q - 1) * (r - 1) | p * q * r - 1) ->\n  (p, q, r) = (2, 4, 8) \\/ (p, q, r) = (3, 5, 15).",
+      "file": "imo/imo_1992_p1.v",
+      "ref_check_s": 1.4871084800106473,
+      "ref_proof_lines": 122
+    },
+    {
+      "name": "imo_1997_p5",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.\nRequire Import PeanoNat.",
+      "preamble": "",
+      "statement": "Theorem imo_1997_p5:\n  forall x y : nat,\n  0 < x -> 0 < y ->\n  x^(y^2) = y^x ->\n  (x, y) = (1, 1) \\/ (x, y) = (16, 2) \\/ (x, y) = (27, 3).",
+      "file": "imo/imo_1997_p5.v",
+      "ref_check_s": 0.9742879069963237,
+      "ref_proof_lines": 114
+    },
+    {
+      "name": "imo_2001_p6",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Nat.\nRequire Import Arith.\nRequire Import Znumtheory.\nRequire Import ZArith.",
+      "preamble": "",
+      "statement": "Theorem imo_2001_p6 :\n  forall (a b c d : nat),\n    (0 < a)%nat /\\ (0 < b)%nat /\\ (0 < c)%nat /\\ (0 < d)%nat ->\n    (d < c)%nat ->\n    (c < b)%nat ->\n    (b < a)%nat ->\n    (a * c + b * d = (b + d + a - c) * (b + d + c - a))%nat ->\n    ~ prime (Z.of_nat (a * b + c * d)).",
+      "file": "imo/imo_2001_p6.v",
+      "ref_check_s": 0.9758982380008092,
+      "ref_proof_lines": 55
+    },
+    {
+      "name": "imo_2019_p1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import ZArith.\nOpen Scope Z_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_2019_p1 (f : Z -> Z) :\n  (forall a b, f (2 * a) + (2 * f b) = f (f (a + b))) <->\n  ((forall z, f z = 0) \\/ exists c, forall z, f z = 2 * z + c).",
+      "file": "imo/imo_2019_p1.v",
+      "ref_check_s": 0.8776815489982255,
+      "ref_proof_lines": 85
+    },
+    {
+      "name": "imo_1961_p1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1961_p1:\n  forall (x y z a b : R),\n  0 < x -> 0 < y -> 0 < z ->\n  x <> y ->\n  y <> z ->\n  z <> x ->\n  x + y + z = a ->\n  x^2 + y^2 + z^2 = b^2 ->\n  x * y = z^2 ->\n  (0 < a /\\ b^2 < a^2 /\\ a^2 < 3 * b^2).",
+      "file": "imo/imo_1961_p1.v",
+      "ref_check_s": 1.6476735299947904,
+      "ref_proof_lines": 29
+    },
+    {
+      "name": "imo_1962_p4",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Coq.Reals.Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1962_p4 :\n  forall x : R,\n    (cos x)^2 + (cos (2*x))^2 + (cos (3*x))^2 = 1 ->\n      (exists m : Z, x = PI / 2 + IZR m * PI)\n      \\/\n      (exists m : Z, x = PI / 4 + IZR m * (PI / 2))\n      \\/\n      (exists m : Z, x = PI / 6 + IZR m * (PI / 6))\n      \\/\n      (exists m : Z, x = 5*PI / 6 + IZR m * (PI / 6)).",
+      "file": "imo/imo_1962_p4.v",
+      "ref_check_s": 1.4942472640104825,
+      "ref_proof_lines": 88
+    },
+    {
+      "name": "imo_1964_p1_1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1964_p1_1 :\n  forall n : nat,\n  (Nat.divide 7 (2^n - 1)) -> (Nat.divide 3 n).",
+      "file": "imo/imo_1964_p1_1.v",
+      "ref_check_s": 0.7527811140025733,
+      "ref_proof_lines": 54
+    },
+    {
+      "name": "imo_1964_p1_2",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Nat.\nRequire Import ZArith.",
+      "preamble": "",
+      "statement": "Theorem imo_1964_p1_2:\n  forall n : nat, ~(Nat.divide 7 (2^n + 1)).",
+      "file": "imo/imo_1964_p1_2.v",
+      "ref_check_s": 0.7915410459972918,
+      "ref_proof_lines": 25
+    },
+    {
+      "name": "imo_1965_p1",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Coq.Reals.Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1965_p1 :\n  forall (x : R),\n    0 <= x ->\n    x <= 2 * PI ->\n    2 * cos x <= Rabs (sqrt (1 + sin (2 * x)) - sqrt (1 - sin (2 * x))) ->\n    Rabs (sqrt (1 + sin (2 * x)) - sqrt (1 - sin (2 * x))) <= sqrt 2 ->\n    PI / 4 <= x /\\ x <= 7 * PI / 4.",
+      "file": "imo/imo_1965_p1.v",
+      "ref_check_s": 1.4183778199949302,
+      "ref_proof_lines": 57
+    },
+    {
+      "name": "imo_1967_p3",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Nat.\nRequire Import Arith.",
+      "preamble": "Definition is_prime (p : nat) := \n  p > 1 /\\ forall n, 1 < n < p -> ~(exists k, n * k = p).\n\n\nFixpoint prod_from_1_to (f : nat -> nat) (n : nat) : nat :=\n  match n with\n  | 0 => 1\n  | S m => (prod_from_1_to f m) * (f (S m))\n  end.",
+      "statement": "Theorem imo_1967_p3 :\n  forall (k m n : nat) (c : nat -> nat),\n    0 < k /\\ 0 < m /\\ 0 < n ->\n    (forall s, c s = s * (s + 1)) ->\n    is_prime (k + m + 1) ->\n    n + 1 < k + m + 1 ->\n    exists d : nat,\n      prod_from_1_to c n * d = prod_from_1_to (fun i => c (m + i) - c k) n.",
+      "file": "imo/imo_1967_p3.v",
+      "ref_check_s": 0.9180074629985029,
+      "ref_proof_lines": 213
+    },
+    {
+      "name": "imo_1973_p3",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1973_p3 :\n  forall (a b : R),\n  (exists x : R, x^4 + a * x^3 + b * x^2 + a * x + 1 = 0) ->\n  4/5 <= a^2 + b^2.",
+      "file": "imo/imo_1973_p3.v",
+      "ref_check_s": 1.451246203010669,
+      "ref_proof_lines": 42
+    },
+    {
+      "name": "imo_1974_p5",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1974_p5 :\n  forall (a b c d s : R),\n  (0 < a) -> (0 < b) -> (0 < c) -> (0 < d) ->\n  (s = a / (a + b + d) + b / (a + b + c) + c / (b + c + d) + d / (a + c + d)) ->\n  (1 < s) /\\ (s < 2).",
+      "file": "imo/imo_1974_p5.v",
+      "ref_check_s": 1.3466555230115773,
+      "ref_proof_lines": 47
+    },
+    {
+      "name": "imo_1977_p5",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import ZArith.\nRequire Import Reals.",
+      "preamble": "",
+      "statement": "Theorem imo_1977_p5 : \n  forall (a b q r : nat),\n    r < a + b ->  (* remainder condition *)\n    a*a + b*b = (a + b) * q + r ->  (* division algorithm *)\n    q*q + r = 1977 ->  (* target sum *)\n    (Z.abs (Z.of_nat a - 22)%Z = 15%Z /\\ Z.abs (Z.of_nat b - 22)%Z = 28%Z) \\/\n    (Z.abs (Z.of_nat a - 22)%Z = 28%Z /\\ Z.abs (Z.of_nat b - 22)%Z = 15%Z).",
+      "file": "imo/imo_1977_p5.v",
+      "ref_check_s": 1.1175684820045717,
+      "ref_proof_lines": 148
+    },
+    {
+      "name": "imo_1978_p5",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nRequire Import Nat.\nRequire Import Lra.\n\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_1978_p5 :\n  forall (n : nat) (f : nat -> nat),\n    (forall x y, f x = f y -> x = y) ->  \n    f O = O ->\n    (0 < n)%nat ->\n    sum_f_R0 (fun k => 1 / INR (S k)) (pred n) <= \n    sum_f_R0 (fun k => INR (f (S k)) / (INR (S k) * INR (S k))) (pred n).",
+      "file": "imo/imo_1978_p5.v",
+      "ref_check_s": 1.4050671250006417,
+      "ref_proof_lines": 244
+    },
+    {
+      "name": "imo_1984_p2",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Nat.\nRequire Import Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1984_p2 :\n  forall (a b : nat),\n    0 < a -> 0 < b ->\n    ~ (Nat.divide 7 a) ->\n    ~ (Nat.divide 7 b) ->\n    ~ (Nat.divide 7 (a + b)) ->\n    (Nat.divide (7^7) ((a + b)^7 - a^7 - b^7)) ->\n    19 <= a + b.",
+      "file": "imo/imo_1984_p2.v",
+      "ref_check_s": 2.263534006997361,
+      "ref_proof_lines": 136
+    },
+    {
+      "name": "imo_1987_p4",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1987_p4 (f : nat -> nat) : \n  exists n, f (f n) <> n + 1987.",
+      "file": "imo/imo_1987_p4.v",
+      "ref_check_s": 2.5472491120017366,
+      "ref_proof_lines": 124
+    },
+    {
+      "name": "imo_1988_p6",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nRequire Import Nat.\nRequire Import ZArith.",
+      "preamble": "",
+      "statement": "Theorem imo_1988_p6 :\n  forall (a b : nat),\n  0 < a -> 0 < b ->\n  (Nat.divide (a * b + 1) (a * a + b * b)) ->\n  exists x : nat, \n    (INR x * INR x)%R = (INR (a * a + b * b) / INR (a * b + 1))%R.",
+      "file": "imo/imo_1988_p6.v",
+      "ref_check_s": 1.4328719720069785,
+      "ref_proof_lines": 108
+    },
+    {
+      "name": "imo_1990_p3",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Nat.",
+      "preamble": "",
+      "statement": "Theorem imo_1990_p3 :\n  forall n : nat,\n  2 <= n ->\n  (exists k, k * (n * n) = 2^n + 1) ->\n  n = 3.",
+      "file": "imo/imo_1990_p3.v",
+      "ref_check_s": 1.8084436190110864,
+      "ref_proof_lines": 279
+    },
+    {
+      "name": "imo_1993_p5",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Coq.Numbers.Natural.Abstract.NBase.\nRequire Import Coq.Arith.Arith.",
+      "preamble": "",
+      "statement": "Theorem imo_1993_p5 :\n  exists f : nat -> nat,\n    f 1 = 2 /\\\n    (forall n, f (f n) = f n + n) /\\\n    (forall n m, n < m -> f n < f m).",
+      "file": "imo/imo_1993_p5.v",
+      "ref_check_s": 1.3612411220092326,
+      "ref_proof_lines": 188
+    },
+    {
+      "name": "imo_2006_p3",
+      "tier": "imo",
+      "domain": "imo",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem imo_2006_p3 (a b c : R) :\n  (a * b * (a^2 - b^2)) + (b * c * (b^2 - c^2)) + (c * a * (c^2 - a^2)) <= (9 * sqrt 2) / 32 * (a^2 + b^2 + c^2)^2.",
+      "file": "imo/imo_2006_p3.v",
+      "ref_check_s": 1.630679063993739,
+      "ref_proof_lines": 94
+    },
+    {
+      "name": "aime_1983_p1",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Coq.Reals.Reals.\n\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1983_p1 :\n  forall (x y z w : R),\n    1 < x ->\n    1 < y ->\n    1 < z ->\n    0 < w ->\n    ln w / ln x = 24 ->\n    ln w / ln y = 40 ->\n    ln w / ln (x * y * z) = 12 ->\n    ln w / ln z = 60.",
+      "file": "aime/aime_1983_p1.v",
+      "ref_check_s": 1.445580202009296,
+      "ref_proof_lines": 53
+    },
+    {
+      "name": "aime_1983_p2",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1983_p2 :\n  forall (x p : R) (f : R -> R),\n  0 < p -> p < 15 ->\n  p <= x -> x <= 15 ->\n  f x = Rabs (x - p) + Rabs (x - 15) + Rabs (x - p - 15) ->\n  15 <= f x.",
+      "file": "aime/aime_1983_p2.v",
+      "ref_check_s": 1.2102125100063859,
+      "ref_proof_lines": 19
+    },
+    {
+      "name": "aime_1983_p3",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nRequire Import List.\nRequire Import SetoidList.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1983_p3 :\n  forall (f : R -> R)\n         (roots : list R),\n  (forall x, f x = x^2 + 18*x + 30 - 2 * sqrt(x^2 + 18*x + 45)) ->\n  (forall x, In x roots <-> f x = 0) ->\n  NoDup roots ->\n  fold_left Rmult roots 1 = 20.",
+      "file": "aime/aime_1983_p3.v",
+      "ref_check_s": 1.415608384006191,
+      "ref_proof_lines": 156
+    },
+    {
+      "name": "aime_1984_p1",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\n\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1984_p1 :\n  forall (u : nat -> R),\n  (forall n, u (n + 1)%nat = u n + 1) ->\n  sum_f_R0 (fun k => u (k + 1)%nat) 97 = 137 ->\n  sum_f_R0 (fun k => u (2 * (k + 1))%nat) 48 = 93.",
+      "file": "aime/aime_1984_p1.v",
+      "ref_check_s": 1.4957291230093688,
+      "ref_proof_lines": 34
+    },
+    {
+      "name": "aime_1984_p7",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Coq.ZArith.ZArith.\n\nOpen Scope Z_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1984_p7:\n  forall (f : Z -> Z),\n  (forall n, 1000 <= n -> f n = n - 3) ->\n  (forall n, n < 1000 -> f n = f (f (n + 5))) ->\n  f 84 = 997.",
+      "file": "aime/aime_1984_p7.v",
+      "ref_check_s": 0.8511266309942584,
+      "ref_proof_lines": 45
+    },
+    {
+      "name": "aime_1987_p5",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import ZArith.\nOpen Scope Z_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1987_p5:\n  forall (x y : Z), \n  (y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517) ->\n  3 * (x ^ 2 * y ^ 2) = 588.",
+      "file": "aime/aime_1987_p5.v",
+      "ref_check_s": 2.4324166949954815,
+      "ref_proof_lines": 41
+    },
+    {
+      "name": "aime_1988_p8",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\n\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1988_p8 :\n  forall f : nat -> nat -> R,\n  (forall x, (x > 0)%nat -> f x x = INR x) ->\n  (forall x y, (x > 0)%nat -> (y > 0)%nat -> f x y = f y x) ->\n  (forall x y, (x > 0)%nat -> (y > 0)%nat ->\n      (INR x + INR y) * f x y = INR y * f x (x + y)%nat) ->\n  f 14%nat 52%nat = 364.",
+      "file": "aime/aime_1988_p8.v",
+      "ref_check_s": 1.3272500230086735,
+      "ref_proof_lines": 37
+    },
+    {
+      "name": "aime_1989_p8",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1989_p8 :\n  forall a b c d e f g : R,\n    a + 4 * b + 9 * c + 16 * d + 25 * e + 36 * f + 49 * g = 1 ->\n    4 * a + 9 * b + 16 * c + 25 * d + 36 * e + 49 * f + 64 * g = 12 ->\n    9 * a + 16 * b + 25 * c + 36 * d + 49 * e + 64 * f + 81 * g = 123 ->\n    16 * a + 25 * b + 36 * c + 49 * d + 64 * e + 81 * f + 100 * g = 334.",
+      "file": "aime/aime_1989_p8.v",
+      "ref_check_s": 1.2167560499947285,
+      "ref_proof_lines": 14
+    },
+    {
+      "name": "aime_1990_p15",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1990_p15 :\n  forall (a b x y : R),\n  (a * x + b * y = 3) ->\n  (a * x^2 + b * y^2 = 7) ->\n  (a * x^3 + b * y^3 = 16) ->\n  (a * x^4 + b * y^4 = 42) ->\n  (a * x^5 + b * y^5 = 20).",
+      "file": "aime/aime_1990_p15.v",
+      "ref_check_s": 1.307385907988646,
+      "ref_proof_lines": 29
+    },
+    {
+      "name": "aime_1990_p4",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1990_p4:\n  forall x : R,\n  0 < x ->\n  x^2 - 10*x - 29 <> 0 ->\n  x^2 - 10*x - 45 <> 0 ->\n  x^2 - 10*x - 69 <> 0 ->\n  1/(x^2 - 10*x - 29) + 1/(x^2 - 10*x - 45) - 2/(x^2 - 10*x - 69) = 0 ->\n  x = 13.",
+      "file": "aime/aime_1990_p4.v",
+      "ref_check_s": 1.3461776490003103,
+      "ref_proof_lines": 24
+    },
+    {
+      "name": "aime_1991_p9",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nRequire Import QArith.\nRequire Import Coq.QArith.Qround.\nRequire Import ZArith.\n\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1991_p9 :\n  forall (x : R),\n    cos x <> 0 ->\n    sin x <> 0 ->\n    (1 / cos x + tan x = 22 / 7)%R ->\n    (exists p q : Z, (0 < q)%Z /\\ Z.gcd p q = 1%Z /\\\n      (1 / sin x + 1 / tan x = IZR p / IZR q)%R /\\\n      (p + q)%Z = 44%Z).",
+      "file": "aime/aime_1991_p9.v",
+      "ref_check_s": 1.4331452790065669,
+      "ref_proof_lines": 52
+    },
+    {
+      "name": "aime_1994_p3",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import ZArith.\nOpen Scope Z_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1994_p3:\n  forall (f : Z -> Z),\n    (forall x, f x + f (x - 1) = x * x) -> (f 19 = 94) -> (f 94 mod 1000 = 561).",
+      "file": "aime/aime_1994_p3.v",
+      "ref_check_s": 0.8258939630031819,
+      "ref_proof_lines": 48
+    },
+    {
+      "name": "aime_1995_p7",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\n\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1995_p7 :\n  forall (k m n : nat) (t : R),\n  (0 < k)%nat -> (0 < m)%nat -> (0 < n)%nat ->\n  (Nat.gcd m n = 1)%nat ->\n  (1 + sin t) * (1 + cos t) = 5 / 4 ->\n  (1 - sin t) * (1 - cos t) = INR m / INR n - sqrt (INR k) ->\n  (k + m + n = 27)%nat.",
+      "file": "aime/aime_1995_p7.v",
+      "ref_check_s": 3.007426359006786,
+      "ref_proof_lines": 163
+    },
+    {
+      "name": "aime_1997_p9",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1997_p9 :\n  forall a : R,\n    0 < a ->\n    (1/a - IZR(Int_part (1/a)) = a^2 - IZR(Int_part (a^2))) ->\n    2 < a^2 ->\n    a^2 < 3 ->\n    a^12 - 144 * (1/a) = 233.",
+      "file": "aime/aime_1997_p9.v",
+      "ref_check_s": 1.3422951300017303,
+      "ref_proof_lines": 47
+    },
+    {
+      "name": "aime_1983_p9",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1983_p9 :\n  forall (x : R), 0 < x -> x < PI ->\n  12 <= (9 * (x^2 * sin x^2) + 4) / (x * sin x).",
+      "file": "aime/aime_1983_p9.v",
+      "ref_check_s": 1.3240672060055658,
+      "ref_proof_lines": 25
+    },
+    {
+      "name": "aime_1984_p15",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1984_p15:\n  forall (x y z w : R),\n  (x^2 / (2^2 - 1) + y^2 / (2^2 - 3^2) + z^2 / (2^2 - 5^2) + w^2 / (2^2 - 7^2) = 1) ->\n  (x^2 / (4^2 - 1) + y^2 / (4^2 - 3^2) + z^2 / (4^2 - 5^2) + w^2 / (4^2 - 7^2) = 1) ->\n  (x^2 / (6^2 - 1) + y^2 / (6^2 - 3^2) + z^2 / (6^2 - 5^2) + w^2 / (6^2 - 7^2) = 1) ->\n  (x^2 / (8^2 - 1) + y^2 / (8^2 - 3^2) + z^2 / (8^2 - 5^2) + w^2 / (8^2 - 7^2) = 1) ->\n  x^2 + y^2 + z^2 + w^2 = 36.",
+      "file": "aime/aime_1984_p15.v",
+      "ref_check_s": 1.2199235019943444,
+      "ref_proof_lines": 16
+    },
+    {
+      "name": "aime_1984_p5",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1984_p5 :\n  forall a b : R,\n  0 < a -> 0 < b ->\n  (ln a) / (ln 8) + (ln (b * b)) / (ln 4) = 5 ->\n  (ln b) / (ln 8) + (ln (a * a)) / (ln 4) = 7 ->\n  a * b = 512.",
+      "file": "aime/aime_1984_p5.v",
+      "ref_check_s": 1.45947713899659,
+      "ref_proof_lines": 59
+    },
+    {
+      "name": "aime_1987_p8",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nRequire Import Nat.\nRequire Import Classical_Pred_Type.\n\n(* The theorem states that 112 is the greatest positive natural number n",
+      "preamble": "for which there exists a unique k such that 8/15 < n/(n+k) < 7/13 *)",
+      "statement": "Theorem aime_1987_p8:\n  forall n : nat,\n  0 < n ->\n  (exists! k : nat,\n    (8/15 < INR n / INR (n + k))%R /\\\n    (INR n / INR (n + k) < 7/13)%R) ->\n  n <= 112.",
+      "file": "aime/aime_1987_p8.v",
+      "ref_check_s": 1.382796424004482,
+      "ref_proof_lines": 95
+    },
+    {
+      "name": "aime_1988_p3",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Coq.Reals.Reals.\n\nOpen Scope R_scope.",
+      "preamble": "Definition logb (a x : R) : R := ln x / ln a.",
+      "statement": "Theorem aime_1988_p3 :\n  forall (x : R),\n    1 < x ->\n    logb 2 (logb 8 x) = logb 8 (logb 2 x) ->\n    (logb 2 x)^2 = 27.",
+      "file": "aime/aime_1988_p3.v",
+      "ref_check_s": 1.4604645240033278,
+      "ref_proof_lines": 57
+    },
+    {
+      "name": "aime_1988_p4",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "Require Import Reals.\nOpen Scope R_scope.",
+      "preamble": "",
+      "statement": "Theorem aime_1988_p4 :\n  forall (n : nat) (a : nat -> R),\n  (forall k, (k < n)%nat -> Rabs (a k) < 1) ->\n  sum_f_R0 (fun k => Rabs (a k)) (pred n) = 19 + Rabs (sum_f_R0 (fun k => a k) (pred n)) ->\n  (20 <= n)%nat.",
+      "file": "aime/aime_1988_p4.v",
+      "ref_check_s": 1.2311999880039366,
+      "ref_proof_lines": 43
+    },
+    {
+      "name": "aime_1991_p1",
+      "tier": "aime",
+      "domain": "aime",
+      "imports": "",
+      "preamble": "",
+      "statement": "Theorem aime_1991_p1 :\n  forall (x y : nat),\n    (x * y + x + y = 71) ->\n    (x*x * y + x * y*y = 880) ->\n    (x*x + y*y = 146).",
+      "file": "aime/aime_1991_p1.v",
+      "ref_check_s": 0.907945678991382,
+      "ref_proof_lines": 28
+    },
+    {
+      "name": "comma_danger_count",
+      "tier": "research",
+      "domain": "number_theory",
+      "imports": "From Stdlib Require Import Arith Bool List.\nImport ListNotations.\n\n(* y is the most significant base-b digit of c. *)",
+      "preamble": "Definition leading_digit (b y c : nat) : Prop :=\n  1 <= y < b /\\ exists k : nat, y * b ^ k <= c < (y + 1) * b ^ k.\n\n(* With x = a mod b the last digit of a, the successor has the form a+bx+y. *)\nDefinition comma_candidate (b a y : nat) : nat := a + b * (a mod b) + y.\n\n(* c follows a: c uses the least y that is the leading digit of a+bx+y. *)\nDefinition comma_step (b a c : nat) : Prop :=\n  exists y : nat,\n    leading_digit b y (comma_candidate b a y) /\\ c = comma_candidate b a y /\\\n    (forall y', y' < y -> ~ leading_digit b y' (comma_candidate b a y')).\n\n(* No y works, so a comma sequence reaching a terminates at a. *)\nDefinition landmine (b a : nat) : Prop :=\n  forall y : nat, ~ leading_digit b y (comma_candidate b a y).\n\n(* Consecutive entries of the list are consecutive comma-sequence terms. *)\nFixpoint comma_path (b : nat) (l : list nat) : Prop :=\n  match l with\n  | a :: ((c :: _) as rest) => comma_step b a c /\\ comma_path b rest\n  | _ => True\n  end.\n\n(* v is in the danger interval [b^m - b^2, b^m), and its comma sequence\n   terminates with every term below b^m. v may itself be the landmine. *)\nDefinition trapped (b m v : nat) : Prop :=\n  b ^ m <= v + b ^ 2 /\\ v < b ^ m /\\\n  exists rest : list nat,\n    comma_path b (v :: rest) /\\ Forall (fun a => a < b ^ m) (v :: rest) /\\\n    landmine b (last (v :: rest) v).\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\nDefinition triangular (n : nat) : nat := n * (n + 1) / 2.\n\n(* r(k) = #{(u, w) : u > w >= 1, T(u) = T(w) + k}. Every such pair has\n   u <= k, because T(u) - T(w) >= T(u) - T(u-1) = u. *)\nDefinition triangular_differences (k : nat) : nat :=\n  length (filter (fun '(u, w) => (w <? u) && (triangular u =? triangular w + k))\n                 (list_prod (seq 1 k) (seq 1 k))).\n\n(* The count plus one is r(1) + ... + r(b); this avoids subtracting one. *)",
+      "statement": "Theorem comma_danger_count : forall b m : nat,\n  2 <= b -> 3 <= m ->\n  exists c : nat,\n    has_cardinality (trapped b m) c /\\\n    c + 1 = list_sum (map triangular_differences (seq 1 b)).",
+      "file": "research/comma_danger_count.v",
+      "ref_check_s": 0.5885421759885503
+    },
+    {
+      "name": "cyclic_4321_213_fib",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import Arith Bool List Sorting.Permutation.\nImport ListNotations.\n\n(* One-line notation: entry i-1 of w is pi(i), for i in 1..n. *)",
+      "preamble": "Definition apply_perm (w : list nat) (i : nat) : nat := nth (i - 1) w 0.\n\nFixpoint orbit (w : list nat) (steps start : nat) : list nat :=\n  match steps with\n  | 0 => []\n  | S s => start :: orbit w s (apply_perm w start)\n  end.\n\n(* Standard cycle form (1, pi(1), pi^2(1), ..., pi^(n-1)(1)), so each entry\n   is sent by pi to the next one. *)\nDefinition cycle_form (w : list nat) : list nat := orbit w (length w) 1.\n\n(* pi is one n-cycle exactly when its standard cycle form has n distinct entries. *)\nDefinition cyclic_perm (n : nat) (w : list nat) : Prop :=\n  Permutation (seq 1 n) w /\\ NoDup (cycle_form w).\n\nFixpoint subsequences (xs : list nat) : list (list nat) :=\n  match xs with\n  | [] => [[]]\n  | x :: rest => let s := subsequences rest in map (cons x) s ++ s\n  end.\n\n(* u and v have the same length and every earlier/later pair of positions\n   compares the same way in both. *)\nFixpoint same_order (u v : list nat) : bool :=\n  match u, v with\n  | [], [] => true\n  | x :: u', y :: v' =>\n      forallb (fun '(x', y') => Bool.eqb (x <? x') (y <? y') && Bool.eqb (x' <? x) (y' <? y))\n              (combine u' v')\n      && same_order u' v'\n  | _, _ => false\n  end.\n\n(* xs contains the pattern iff some subsequence of xs is order-isomorphic to it. *)\nDefinition avoids (pattern xs : list nat) : bool :=\n  negb (existsb (same_order pattern) (subsequences xs)).\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* fib 0 = 0 and fib 1 = 1. *)\nFixpoint fib (n : nat) : nat :=\n  match n with\n  | 0 => 0\n  | S m => match m with 0 => 1 | S p => fib m + fib p end\n  end.\n\n(* Size n+2 >= 2; the paper's F_(2(n+2)-3) is fib (2n+1). *)",
+      "statement": "Theorem cyclic_4321_213_fib : forall n : nat,\n  has_cardinality (fun w => cyclic_perm (n + 2) w /\\\n                            avoids [4; 3; 2; 1] w = true /\\\n                            avoids [2; 1; 3] (cycle_form w) = true)\n                  (fib (2 * n + 1)).",
+      "file": "research/cyclic_4321_213_fib.v",
+      "ref_check_s": 0.5838198150013341
+    },
+    {
+      "name": "cyclic_rot1432_4321",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import Arith Bool List Sorting.Permutation.\nImport ListNotations.\n\n(* One-line notation: entry i-1 of w is pi(i), for i in 1..n. *)",
+      "preamble": "Definition apply_perm (w : list nat) (i : nat) : nat := nth (i - 1) w 0.\n\nFixpoint orbit (w : list nat) (steps start : nat) : list nat :=\n  match steps with\n  | 0 => []\n  | S s => start :: orbit w s (apply_perm w start)\n  end.\n\n(* Standard cycle form (1, pi(1), pi^2(1), ..., pi^(n-1)(1)), so each entry\n   is sent by pi to the next one. *)\nDefinition cycle_form (w : list nat) : list nat := orbit w (length w) 1.\n\n(* pi is one n-cycle exactly when its standard cycle form has n distinct entries. *)\nDefinition cyclic_perm (n : nat) (w : list nat) : Prop :=\n  Permutation (seq 1 n) w /\\ NoDup (cycle_form w).\n\nFixpoint subsequences (xs : list nat) : list (list nat) :=\n  match xs with\n  | [] => [[]]\n  | x :: rest => let s := subsequences rest in map (cons x) s ++ s\n  end.\n\n(* u and v have the same length and every earlier/later pair of positions\n   compares the same way in both. *)\nFixpoint same_order (u v : list nat) : bool :=\n  match u, v with\n  | [], [] => true\n  | x :: u', y :: v' =>\n      forallb (fun '(x', y') => Bool.eqb (x <? x') (y <? y') && Bool.eqb (x' <? x) (y' <? y))\n              (combine u' v')\n      && same_order u' v'\n  | _, _ => false\n  end.\n\n(* xs contains the pattern iff some subsequence of xs is order-isomorphic to it. *)\nDefinition avoids (pattern xs : list nat) : bool :=\n  negb (existsb (same_order pattern) (subsequences xs)).\n(* Rotation i of c_1 ... c_n is c_(i+1) ... c_n c_1 ... c_i. *)\nDefinition rotate (i : nat) (c : list nat) : list nat := skipn i c ++ firstn i c.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* Size N = n+3 >= 3. The paper's count 2^(N-1) - floor((3N-5)/2) is m with\n   m + floor((3n+4)/2) = 2^(n+2), stated without subtraction. *)",
+      "statement": "Theorem cyclic_rot1432_4321 : forall n : nat,\n  exists m : nat,\n    has_cardinality (fun w => cyclic_perm (n + 3) w /\\\n                              avoids [4; 3; 2; 1] w = true /\\\n                              (forall i : nat, i < n + 3 ->\n                                 avoids [1; 4; 3; 2] (rotate i (cycle_form w)) = true))\n                    m /\\\n    m + (3 * n + 4) / 2 = 2 ^ (n + 2).",
+      "file": "research/cyclic_rot1432_4321.v",
+      "ref_check_s": 0.582581223003217
+    },
+    {
+      "name": "digit_insert_rank",
+      "tier": "research",
+      "domain": "number_theory",
+      "imports": "From Stdlib Require Import Arith List.\nImport ListNotations.\n\n(* Decimal digits are most significant first. *)",
+      "preamble": "Fixpoint decimal_value (ds : list nat) : nat :=\n  match ds with\n  | [] => 0\n  | d :: rest => d * 10 ^ length rest + decimal_value rest\n  end.\n\n(* ds is the decimal expansion of n: nonempty, no leading zero. So 1 <= n. *)\nDefinition decimal_expansion (n : nat) (ds : list nat) : Prop :=\n  Forall (fun d => d < 10) ds /\\\n  (match ds with [] => False | d :: _ => d <> 0 end) /\\\n  decimal_value ds = n.\n\n(* m is obtained by inserting one digit x at one of the length+1 gaps of ds,\n   and the result has no leading zero. The predicate is on values m, so equal\n   values from different insertions are one element of the set S(n). *)\nDefinition inserted (ds : list nat) (m : nat) : Prop :=\n  exists i x : nat, i <= length ds /\\ x < 10 /\\\n    let es := firstn i ds ++ x :: skipn i ds in\n    (match es with [] => False | e :: _ => e <> 0 end) /\\\n    decimal_value es = m.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* The one-based position of 10n in the increasing enumeration of S(n) is the\n   number of elements of S(n) that are at most 10n, given 10n is in S(n). *)",
+      "statement": "Theorem digit_insert_rank : forall (n : nat) (ds : list nat),\n  decimal_expansion n ds ->\n  inserted ds (10 * n) /\\\n  has_cardinality (fun m => inserted ds m /\\ m <= 10 * n) (list_sum ds).",
+      "file": "research/digit_insert_rank.v",
+      "ref_check_s": 0.5647127210104372
+    },
+    {
+      "name": "fib_signed_zero_trib",
+      "tier": "research",
+      "domain": "number_theory",
+      "imports": "From Stdlib Require Import ZArith List.\nImport ListNotations.\n\n(* F_0 = 0, F_1 = F_2 = 1. Positions 1 and 2 are distinct digit positions. *)",
+      "preamble": "Fixpoint fib (i : nat) : Z :=\n  match i with\n  | 0 => 0%Z\n  | S p => match p with\n           | 0 => 1%Z\n           | S q => (fib p + fib q)%Z\n           end\n  end.\n\n(* Digits are most significant first: [a_k; ...; a_1] has value\n   a_k*F_k + ... + a_1*F_1. Leading zeroes are allowed; the length is fixed. *)\nFixpoint fib_value (ds : list Z) : Z :=\n  match ds with\n  | [] => 0%Z\n  | d :: rest => (d * fib (S (length rest)) + fib_value rest)%Z\n  end.\n\nDefinition signed_zero_rep (k : nat) (ds : list Z) : Prop :=\n  length ds = k /\\ Forall (fun d => (-1 <= d <= 1)%Z) ds /\\ fib_value ds = 0%Z.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* 1, 1, 3, 5, 9, 17, ...; the value at 0 counts the empty list. *)\nFixpoint trib (k : nat) : nat :=\n  match k with\n  | 0 => 1\n  | S p => match p with\n           | 0 => 1\n           | S q => match q with\n                    | 0 => 3\n                    | S r => trib p + trib q + trib r\n                    end\n           end\n  end.",
+      "statement": "Theorem fib_signed_zero_trib : forall k : nat,\n  has_cardinality (signed_zero_rep k) (trib k).",
+      "file": "research/fib_signed_zero_trib.v",
+      "ref_check_s": 0.7218770610052161
+    },
+    {
+      "name": "hofstadter3_death",
+      "tier": "research",
+      "domain": "number_theory",
+      "imports": "From Stdlib Require Import Bool ZArith List.\nImport ListNotations.\n\n(* terms = [B(1); ...; B(len)]. B(i) is defined only for 1 <= i <= len. *)",
+      "preamble": "Definition term (terms : list Z) (i : Z) : option Z :=\n  if ((1 <=? i) && (i <=? Z.of_nat (length terms)))%Z\n  then Some (nth (Z.to_nat (i - 1)) terms 0%Z)\n  else None.\n\n(* B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3)) for n = len + 1.\n   It is undefined (None) if any index used is outside 1..n-1: this covers\n   nonpositive indices and references to B(n) or later terms. *)\nDefinition next_term (terms : list Z) : option Z :=\n  let n := (Z.of_nat (length terms) + 1)%Z in\n  match term terms (n - 1), term terms (n - 2), term terms (n - 3) with\n  | Some a, Some b, Some c =>\n      match term terms (n - a), term terms (n - b), term terms (n - c) with\n      | Some x, Some y, Some z => Some (x + y + z)%Z\n      | _, _, _ => None\n      end\n  | _, _, _ => None\n  end.\n\n(* Append k further terms, or None if the sequence dies first. *)\nFixpoint extend (terms : list Z) (k : nat) : option (list Z) :=\n  match k with\n  | 0 => Some terms\n  | S k' => match next_term terms with\n            | Some b => extend (terms ++ [b]) k'\n            | None => None\n            end\n  end.\n\n(* Initial conditions B(i) = i for 1 <= i <= N. *)\nDefinition linear_init (N : nat) : list Z := map Z.of_nat (seq 1 N).\n\n(* Exactly N + 24 terms: B(N+1), ..., B(N+24) exist and B(N+25) does not. *)",
+      "statement": "Theorem hofstadter3_death : forall N : nat,\n  14 <= N ->\n  (exists terms, extend (linear_init N) 24 = Some terms) /\\\n  extend (linear_init N) 25 = None.",
+      "file": "research/hofstadter3_death.v",
+      "ref_check_s": 1.312583671999164
+    },
+    {
+      "name": "lucky_one_unlucky",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import Arith Bool List Sorting.Permutation.\nImport ListNotations.\n\n(* Spots are 1..n. A car preferring p takes the first unoccupied spot s with\n   p <= s, or leaves if there is none. Entry i of the result is the spot of",
+      "preamble": "the (i+1)-th car, or None if it left. All cars need not park. *)\nDefinition next_spot (n : nat) (occupied : list nat) (p : nat) : option nat :=\n  find (fun s => (p <=? s) && negb (existsb (Nat.eqb s) occupied)) (seq 1 n).\n\nFixpoint park (n : nat) (occupied : list nat) (prefs : list nat) : list (option nat) :=\n  match prefs with\n  | [] => []\n  | p :: rest =>\n      match next_spot n occupied p with\n      | Some s => Some s :: park n (s :: occupied) rest\n      | None => None :: park n occupied rest\n      end\n  end.\n\n(* A car is lucky when it parks in its preferred spot. A car that leaves is\n   not lucky. *)\nDefinition lucky_count (n : nat) (prefs : list nat) : nat :=\n  length (filter (fun '(p, spot) =>\n                    match spot with Some s => Nat.eqb s p | None => false end)\n                 (combine prefs (park n [] prefs))).\n\n(* Exactly n-1 lucky cars, written lucky + 1 = n: for n = 0 no list\n   qualifies (truncated n-1 would wrongly admit the empty list). *)\nDefinition one_unlucky (n : nat) (prefs : list nat) : Prop :=\n  length prefs = n /\\ Forall (fun p => 1 <= p <= n) prefs /\\\n  lucky_count n prefs + 1 = n.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* Quicksort with the first entry as pivot. The pivot is compared once with\n   each other entry; entries <= pivot go left and larger ones go right, both\n   in their original order. The fuel (the list length) bounds the recursion. *)\nFixpoint qs_comparisons_fuel (fuel : nat) (xs : list nat) : nat :=\n  match fuel, xs with\n  | S fuel', pivot :: rest =>\n      length rest\n      + qs_comparisons_fuel fuel' (filter (fun x => x <=? pivot) rest)\n      + qs_comparisons_fuel fuel' (filter (fun x => pivot <? x) rest)\n  | _, _ => 0\n  end.\nDefinition quicksort_comparisons (xs : list nat) : nat :=\n  qs_comparisons_fuel (length xs) xs.\n\n(* t is the total number of comparisons over all n! orderings of 1..n,\n   summed along a duplicate-free list of exactly those orderings. *)\nDefinition quicksort_total (n t : nat) : Prop :=\n  exists orders : list (list nat),\n    NoDup orders /\\ (forall w, In w orders <-> Permutation (seq 1 n) w) /\\\n    list_sum (map quicksort_comparisons orders) = t.",
+      "statement": "Theorem lucky_one_unlucky : forall n : nat,\n  exists t : nat, quicksort_total n t /\\ has_cardinality (one_unlucky n) t.",
+      "file": "research/lucky_one_unlucky.v",
+      "ref_check_s": 0.5840872080007102
+    },
+    {
+      "name": "medial_countermodel_01",
+      "tier": "research",
+      "domain": "equational_theories",
+      "imports": "From Stdlib Require Import List.\nImport ListNotations.",
+      "preamble": "Definition medial {A : Type} (op : A -> A -> A) : Prop :=\n  forall x y z w, op (op x y) (op z w) = op (op x z) (op y w).\n\n(* A concrete three-element carrier, using an existing Stdlib type. *)\nDefinition element := option bool.\nDefinition index (x : element) : nat :=\n  match x with None => 0 | Some false => 1 | Some true => 2 end.\nDefinition table_op (table : list element) (x y : element) : element :=\n  nth (3 * index x + index y) table None.",
+      "statement": "Theorem medial_countermodel_01 : exists table : list element,\n  length table = 9 /\\ medial (table_op table) /\\\n  exists a b c d : element,\n  let op := table_op table in\n  (op (op (op (op a a) (op b a)) (op (op d a) (op c a))) (op (op (op b d) (op d d)) (op (op b b) (op c c)))) <>\n  (op (op (op (op a d) (op d b)) (op (op b d) (op c c))) (op (op (op a a) (op a d)) (op (op b a) (op b c)))).",
+      "file": "research/medial_countermodel_01.v",
+      "ref_check_s": 0.40785861399490386,
+      "ref_proof_lines": 27
+    },
+    {
+      "name": "medial_countermodel_02",
+      "tier": "research",
+      "domain": "equational_theories",
+      "imports": "From Stdlib Require Import List.\nImport ListNotations.",
+      "preamble": "Definition medial {A : Type} (op : A -> A -> A) : Prop :=\n  forall x y z w, op (op x y) (op z w) = op (op x z) (op y w).\n\n(* A concrete three-element carrier, using an existing Stdlib type. *)\nDefinition element := option bool.\nDefinition index (x : element) : nat :=\n  match x with None => 0 | Some false => 1 | Some true => 2 end.\nDefinition table_op (table : list element) (x y : element) : element :=\n  nth (3 * index x + index y) table None.",
+      "statement": "Theorem medial_countermodel_02 : exists table : list element,\n  length table = 9 /\\ medial (table_op table) /\\\n  exists a b c d : element,\n  let op := table_op table in\n  (op (op (op (op a c) (op a b)) (op (op c c) (op c a))) (op (op (op a b) (op b b)) (op (op d c) (op a d)))) <>\n  (op (op (op (op a c) (op a c)) (op (op a b) (op c b))) (op (op (op c b) (op c a)) (op (op d a) (op b d)))).",
+      "file": "research/medial_countermodel_02.v",
+      "ref_check_s": 0.41393321099167224,
+      "ref_proof_lines": 27
+    },
+    {
+      "name": "medial_walk_01",
+      "tier": "research",
+      "domain": "equational_theories",
+      "imports": "From Stdlib Require Import List.\nImport ListNotations.",
+      "preamble": "Definition medial {A : Type} (op : A -> A -> A) : Prop :=\n  forall x y z w, op (op x y) (op z w) = op (op x z) (op y w).",
+      "statement": "Theorem medial_walk_01 : forall (A : Type) (op : A -> A -> A),\n  medial op -> forall a b c d : A,\n  (op (op (op (op a a) (op b a)) (op (op d a) (op c a))) (op (op (op b d) (op d d)) (op (op b b) (op c c)))) =\n  (op (op (op (op a b) (op d b)) (op (op b d) (op c c))) (op (op (op a a) (op a d)) (op (op d a) (op b c)))).",
+      "file": "research/medial_walk_01.v",
+      "ref_check_s": 0.24791285600804258,
+      "ref_proof_lines": 46
+    },
+    {
+      "name": "medial_walk_02",
+      "tier": "research",
+      "domain": "equational_theories",
+      "imports": "From Stdlib Require Import List.\nImport ListNotations.",
+      "preamble": "Definition medial {A : Type} (op : A -> A -> A) : Prop :=\n  forall x y z w, op (op x y) (op z w) = op (op x z) (op y w).",
+      "statement": "Theorem medial_walk_02 : forall (A : Type) (op : A -> A -> A),\n  medial op -> forall a b c d : A,\n  (op (op (op (op a c) (op a b)) (op (op c c) (op c a))) (op (op (op a b) (op b b)) (op (op d c) (op a d)))) =\n  (op (op (op (op a c) (op a b)) (op (op a b) (op c c))) (op (op (op c b) (op c a)) (op (op d a) (op b d)))).",
+      "file": "research/medial_walk_02.v",
+      "ref_check_s": 0.24879389599664137,
+      "ref_proof_lines": 46
+    },
+    {
+      "name": "parking_count",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import Arith List Sorting.Permutation Sorting.Sorted.\nImport ListNotations.\n\n(* Positive preferences, and an explicitly sorted permutation. The index i\n   is zero-based, so its upper bound is a + b*i. No counting recurrence is",
+      "preamble": "built into the definition. *)\nDefinition parking_function (a b n : nat) (xs : list nat) : Prop :=\n  length xs = n /\\ Forall (fun x => 1 <= x) xs /\\\n  exists ys : list nat, Permutation xs ys /\\ StronglySorted le ys /\\\n    (forall i : nat, i < n -> nth i ys 0 <= a + b * i).\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* Length zero has one empty preference list, including when a=0. *)\nDefinition parking_formula (a b n : nat) : nat :=\n  match n with\n  | 0 => 1\n  | S m => a * (a + b * S m) ^ m\n  end.",
+      "statement": "Theorem parking_count : forall a b n : nat,\n  has_cardinality (parking_function a b n) (parking_formula a b n).",
+      "file": "research/parking_count.v",
+      "ref_check_s": 0.5698427079914836
+    },
+    {
+      "name": "parking_exced_des",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import Arith Bool List Sorting.Permutation Sorting.Sorted.\nImport ListNotations.\n\n(* A parking content b_1 <= ... <= b_n with 1 <= b_j <= j. Zero-based entry",
+      "preamble": "i of the list is b_(i+1). *)\nDefinition parking_content (n : nat) (b : list nat) : Prop :=\n  length b = n /\\ Sorted le b /\\ (forall i : nat, i < n -> 1 <= nth i b 0 <= S i).\n\n(* w is a permutation of 1..n in one-line notation, and pi_i = b_(w(i)).\n   Entries j of w are at least 1, so j - 1 does not truncate. *)\nDefinition content_word (b w : list nat) : list nat :=\n  map (fun j => nth (j - 1) b 0) w.\n\n(* Spots are 1..n. A car preferring p takes the first unoccupied spot s with\n   p <= s, or leaves if there is none. Entry i of the result is the spot of\n   the (i+1)-th car, or None if it left. *)\nDefinition next_spot (n : nat) (occupied : list nat) (p : nat) : option nat :=\n  find (fun s => (p <=? s) && negb (existsb (Nat.eqb s) occupied)) (seq 1 n).\n\nFixpoint park (n : nat) (occupied : list nat) (prefs : list nat) : list (option nat) :=\n  match prefs with\n  | [] => []\n  | p :: rest =>\n      match next_spot n occupied p with\n      | Some s => Some s :: park n (s :: occupied) rest\n      | None => None :: park n occupied rest\n      end\n  end.\n\n(* exced(pi) = #{i in 1..n : pi_i > i}: strict and one-based. *)\nFixpoint exced_from (i : nat) (pi : list nat) : nat :=\n  match pi with\n  | [] => 0\n  | x :: rest => (if i <? x then 1 else 0) + exced_from (S i) rest\n  end.\nDefinition exced (pi : list nat) : nat := exced_from 1 pi.\n\n(* des(sigma) = #{i in 1..n-1 : sigma(i) > sigma(i+1)}. *)\nFixpoint des (sigma : list nat) : nat :=\n  match sigma with\n  | x :: ((y :: _) as rest) => (if y <? x then 1 else 0) + des rest\n  | _ => 0\n  end.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* Both sides count permutations w (with multiplicity in pi). The outcome\n   sigma = oc(pi) lists, car by car, the spot where each car parks; it is\n   not the inverse listing of the car in each spot. *)",
+      "statement": "Theorem parking_exced_des : forall (n : nat) (b : list nat) (k : nat),\n  parking_content n b ->\n  exists m : nat,\n    has_cardinality (fun w => Permutation (seq 1 n) w /\\\n                              exced (content_word b w) = k) m /\\\n    has_cardinality (fun w => Permutation (seq 1 n) w /\\\n                              exists sigma : list nat,\n                                park n [] (content_word b w) = map Some sigma /\\\n                                des sigma = k) m.",
+      "file": "research/parking_exced_des.v",
+      "ref_check_s": 0.6048909749952145
+    },
+    {
+      "name": "quaternary_shift",
+      "tier": "research",
+      "domain": "number_theory",
+      "imports": "From Stdlib Require Import ZArith List.\nImport ListNotations.\n\n(* Digits are most significant first. Leading zeroes are not representations. *)",
+      "preamble": "Fixpoint quaternary_value (ds : list Z) : Z :=\n  match ds with\n  | [] => 0%Z\n  | d :: rest => (d * 4 ^ Z.of_nat (length rest) + quaternary_value rest)%Z\n  end.\n\n(* The empty list is the unique representation of zero in both families. *)\nDefinition hyperquaternary (m : Z) (ds : list Z) : Prop :=\n  Forall (fun d => (0 <= d <= 4)%Z) ds /\\\n  (match ds with [] => True | d :: _ => d <> 0%Z end) /\\\n  quaternary_value ds = m.\n\nDefinition balanced_quaternary (n : Z) (ds : list Z) : Prop :=\n  Forall (fun d => (-2 <= d <= 2)%Z) ds /\\\n  (match ds with [] => True | d :: _ => d <> 0%Z end) /\\\n  quaternary_value ds = n.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* repdigit c j is the base-4 numeral with j copies of the digit c. *)\nDefinition repdigit (c : Z) (j : nat) : Z := quaternary_value (repeat c j).",
+      "statement": "Theorem quaternary_shift : forall (j : nat) (n : Z),\n  1 <= j ->\n  (- repdigit 1 j <= n <= repdigit 1 (S j))%Z ->\n  exists k : nat,\n    has_cardinality (hyperquaternary (repdigit 2 j + n)) k /\\\n    has_cardinality (balanced_quaternary n) k.",
+      "file": "research/quaternary_shift.v",
+      "ref_check_s": 0.7268533899914473
+    },
+    {
+      "name": "short_bsd_hyperbinary",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import ZArith List.\nImport ListNotations.\n\n(* Digits are most significant first. Leading zeroes are not representations. *)",
+      "preamble": "Fixpoint binary_value (ds : list Z) : Z :=\n  match ds with\n  | [] => 0%Z\n  | d :: rest => (d * 2 ^ Z.of_nat (length rest) + binary_value rest)%Z\n  end.\n\nDefinition short_bsd (n : nat) (ds : list Z) : Prop :=\n  Forall (fun d => (-1 <= d <= 1)%Z) ds /\\\n  (match ds with\n   | [] => False\n   | d :: [] => d <> 0%Z\n   | d :: e :: _ => d <> 0%Z /\\ (d + e <> 0)%Z\n   end) /\\ binary_value ds = Z.of_nat n.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* The empty list is the unique representation of zero. *)\nDefinition hyperbinary (n : nat) (ds : list Z) : Prop :=\n  Forall (fun d => (0 <= d <= 2)%Z) ds /\\\n  (match ds with [] => True | d :: _ => d <> 0%Z end) /\\\n  binary_value ds = Z.of_nat n.",
+      "statement": "Theorem short_bsd_hyperbinary : forall n : nat, exists k : nat,\n  has_cardinality (short_bsd (S n)) k /\\\n  has_cardinality (hyperbinary n) k.",
+      "file": "research/short_bsd_hyperbinary.v",
+      "ref_check_s": 0.7424425599892857
+    },
+    {
+      "name": "short_bsd_stern",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import ZArith List.\nImport ListNotations.\n\n(* Digits are most significant first. Leading zeroes are not representations. *)",
+      "preamble": "Fixpoint binary_value (ds : list Z) : Z :=\n  match ds with\n  | [] => 0%Z\n  | d :: rest => (d * 2 ^ Z.of_nat (length rest) + binary_value rest)%Z\n  end.\n\nDefinition short_bsd (n : nat) (ds : list Z) : Prop :=\n  Forall (fun d => (-1 <= d <= 1)%Z) ds /\\\n  (match ds with\n   | [] => False\n   | d :: [] => d <> 0%Z\n   | d :: e :: _ => d <> 0%Z /\\ (d + e <> 0)%Z\n   end) /\\ binary_value ds = Z.of_nat n.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* The pair is (s(p), s(p+1)), following the binary digits of p. *)\nFixpoint stern_pair (p : positive) : nat * nat :=\n  match p with\n  | xH => (1, 1)\n  | xO q => let '(a, b) := stern_pair q in (a, a + b)\n  | xI q => let '(a, b) := stern_pair q in (a + b, b)\n  end.\nDefinition stern (n : nat) : nat :=\n  match N.of_nat n with\n  | N0 => 0\n  | Npos p => fst (stern_pair p)\n  end.",
+      "statement": "Theorem short_bsd_stern : forall n : nat,\n  has_cardinality (short_bsd n) (stern n).",
+      "file": "research/short_bsd_stern.v",
+      "ref_check_s": 0.7222909889969742
+    },
+    {
+      "name": "vpf_nonincreasing",
+      "tier": "research",
+      "domain": "combinatorics",
+      "imports": "From Stdlib Require Import Arith List Sorting.Sorted.\nImport ListNotations.\n\n(* Spots are 1..n; spot 0 and spot n+1 do not exist. *)",
+      "preamble": "Definition spot_free (n : nat) (occupied : list nat) (s : nat) : bool :=\n  (1 <=? s) && (s <=? n) && negb (existsb (Nat.eqb s) occupied).\n\n(* A car preferring p tries p, then p-1, then p+1, and takes the first of\n   these that exists and is free. For p = 1, p-1 is 0, which is not a spot. *)\nDefinition vacillating_spot (n : nat) (occupied : list nat) (p : nat) : option nat :=\n  find (spot_free n occupied) [p; p - 1; p + 1].\n\nFixpoint all_park (n : nat) (occupied : list nat) (prefs : list nat) : bool :=\n  match prefs with\n  | [] => true\n  | p :: rest =>\n      match vacillating_spot n occupied p with\n      | Some s => all_park n (s :: occupied) rest\n      | None => false\n      end\n  end.\n\n(* Non-increasing: a_1 >= a_2 >= ... >= a_n. *)\nDefinition nonincreasing_vpf (n : nat) (prefs : list nat) : Prop :=\n  length prefs = n /\\ Forall (fun p => 1 <= p <= n) prefs /\\\n  Sorted ge prefs /\\ all_park n [] prefs = true.\n\nDefinition has_cardinality {A : Type} (P : A -> Prop) (k : nat) : Prop :=\n  exists xs : list A, NoDup xs /\\ (forall x, In x xs <-> P x) /\\ length xs = k.\n\n(* The paper's recurrence v(n) = 2 v(n-1) + v(n-3) with v(1), v(2), v(3) =\n   1, 3, 6. Length 0 has one (empty) list; the recurrence starts at n = 4.\n   In the last branch n = p+1 and p = q+2, with q >= 1. *)\nFixpoint vpf_count (n : nat) : nat :=\n  match n with\n  | 0 => 1\n  | 1 => 1\n  | 2 => 3\n  | 3 => 6\n  | S ((S (S ((S _) as q))) as p) => 2 * vpf_count p + vpf_count q\n  end.",
+      "statement": "Theorem vpf_nonincreasing : forall n : nat,\n  has_cardinality (nonincreasing_vpf n) (vpf_count n).",
+      "file": "research/vpf_nonincreasing.v",
+      "ref_check_s": 0.5657877839985304
+    }
+  ]
+}

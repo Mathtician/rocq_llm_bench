@@ -1,0 +1,9 @@
+# Qwen3.8-Max on Fireworks.
+name = "pi-fireworks-qwen38-max"
+harness = "pi"
+model = "accounts/fireworks/models/qwen3p8-max"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "medium"

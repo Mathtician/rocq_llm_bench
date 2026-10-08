@@ -1,0 +1,9 @@
+# Codex CLI, GPT-6 Astra at low reasoning effort, handing lemmas to subagents that are themselves
+# codex-astra-low attempts (rlb-run, `python3 lemma.py prove`). Otherwise identical to codex-astra-low.
+name = "codex-astra-low-subagents"
+harness = "codex"
+model = "gpt-6-astra"
+subagent = "configs/codex-astra-low.toml"
+timeout_s = 900
+[args]
+effort = "low"

@@ -1,0 +1,8 @@
+# Codex, GPT-5.6-Terra (listed on this ChatGPT plan alongside Sol and Luna).
+name = "codex-terra-high"
+harness = "codex"
+model = "gpt-5.6-terra"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "high"

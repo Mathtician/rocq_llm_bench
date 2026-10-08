@@ -1,0 +1,9 @@
+# Variant of pi-cerebras: medium thinking (high tends to wander into format meta-reasoning).
+name = "pi-cerebras-medium"
+harness = "pi"
+model = "cerebras/gpt-oss-120b"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "cerebras"
+thinking = "medium"

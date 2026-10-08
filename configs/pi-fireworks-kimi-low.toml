@@ -1,0 +1,9 @@
+# Kimi K3 on Fireworks, thinking low: stall test (at high it spent 900 s on every Putnam problem in one or two generations).
+name = "pi-fireworks-kimi-low"
+harness = "pi"
+model = "accounts/fireworks/models/kimi-k3"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "low"

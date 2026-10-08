@@ -1,0 +1,8 @@
+# Codex, GPT-5.4-Mini: the small/fast end of the ChatGPT plan.
+name = "codex-54mini-high"
+harness = "codex"
+model = "gpt-5.4-mini"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "high"

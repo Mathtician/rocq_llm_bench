@@ -1,0 +1,11 @@
+# Claude Code, Sonnet 5.5 at medium effort (Max subscription); same knobs as claude-opus55-medium.
+# Claude Code 2.1.280 does not know this id ("unrecognized_model", no cost basis) but sends it as-is,
+# with the same adaptive thinking and output_config.effort as for claude-sonnet-5 (max_tokens 128000 vs 64000).
+name = "claude-sonnet55-medium"
+harness = "claude"
+model = "claude-sonnet-5-5"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "medium"
+max_turns = 80

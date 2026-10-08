@@ -1,0 +1,20 @@
+_opam/
+vendor/
+.venv/
+logs/
+.pytest_cache/
+__pycache__/
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
+# results/ is committed (append-only) except regenerable scratch:
+results/*/shim/
+results/**/verify/
+# net.pcap: full payloads (encrypted, but MBs); the derived net.json is kept.
+# (git has no trailing comments: a "#" after a pattern becomes part of it.)
+results/**/net.pcap
+.lia.cache
+.nia.cache
+.nra.cache

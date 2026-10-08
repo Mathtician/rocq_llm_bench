@@ -1,0 +1,6 @@
+# Cursor CLI (Pro login), Composer 2.5, standard tier (the plain model id; "fast" is a separate paid tier).
+name = "cursor-composer-25"
+harness = "cursor"
+model = "composer-2.5"
+subagent = "none"
+timeout_s = 900

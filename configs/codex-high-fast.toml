@@ -1,0 +1,12 @@
+# Codex Sol at high effort on the tier the Codex UI calls "Fast": service_tier id `priority`
+# ("1.5x speed, increased usage" per /backend-api/codex/models; 2x for gpt-6-astra). The value
+# `fast` is only an "additional_speed_tier" there and was silently ignored (ledger #20).
+# Same model and reasoning as codex-high; only delivery differs.
+name = "codex-high-fast"
+harness = "codex"
+model = "gpt-5.6-sol"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "high"
+config = ['service_tier="priority"']

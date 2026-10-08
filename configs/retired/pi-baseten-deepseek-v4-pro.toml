@@ -1,0 +1,9 @@
+# DeepSeek V4 Pro on Baseten: the fastest provider for it (Artificial Analysis, Sep 2026).
+name = "pi-baseten-deepseek-v4-pro"
+harness = "pi"
+model = "deepseek-ai/DeepSeek-V4-Pro-0813"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "baseten"
+thinking = "medium"

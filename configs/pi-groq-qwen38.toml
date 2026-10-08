@@ -1,0 +1,9 @@
+# Qwen3.8 27B on Groq (preview, ~450 tok/s). Needs the Groq key at a paid tier: free tier is 8k TPM.
+name = "pi-groq-qwen38"
+harness = "pi"
+model = "groq/qwen/qwen3.8-27b"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "groq"
+thinking = "medium"

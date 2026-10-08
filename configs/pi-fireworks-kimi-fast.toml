@@ -1,0 +1,9 @@
+# Kimi K3 on Fireworks's "fast" router: same model, speculative-decoding tier, higher price.
+name = "pi-fireworks-kimi-fast"
+harness = "pi"
+model = "accounts/fireworks/routers/kimi-k3-fast"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "medium"

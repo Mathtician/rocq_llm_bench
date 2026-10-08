@@ -1,0 +1,8 @@
+name = "pi-fireworks-kimi"
+harness = "pi"
+model = "accounts/fireworks/models/kimi-k3"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "fireworks"
+thinking = "high"

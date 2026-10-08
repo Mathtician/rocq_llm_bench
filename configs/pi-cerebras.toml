@@ -1,0 +1,9 @@
+# Needs CEREBRAS_API_KEY in the environment. Pick a model with `pi --list-models cerebras`.
+name = "pi-cerebras"
+harness = "pi"
+model = "cerebras/gpt-oss-120b"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "cerebras"
+thinking = "high"

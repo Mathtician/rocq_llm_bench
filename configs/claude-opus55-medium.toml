@@ -1,0 +1,9 @@
+# Claude Code, Opus 5.5 at medium effort (Max subscription); same knobs as claude-opus-medium (Opus 5).
+name = "claude-opus55-medium"
+harness = "claude"
+model = "claude-opus-5-5"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "medium"
+max_turns = 80

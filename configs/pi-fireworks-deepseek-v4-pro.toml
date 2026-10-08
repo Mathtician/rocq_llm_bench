@@ -1,0 +1,9 @@
+# DeepSeek V4 Pro on Fireworks: strongest on competition math, weaker agentic scores.
+name = "pi-fireworks-deepseek-v4-pro"
+harness = "pi"
+model = "accounts/fireworks/models/deepseek-v4-pro-0813"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "medium"

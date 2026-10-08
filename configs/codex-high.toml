@@ -1,0 +1,7 @@
+name = "codex-high"
+harness = "codex"
+model = "gpt-5.6-sol"   # taken from ~/.codex/config.toml; adjust to what your plan offers
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "high"

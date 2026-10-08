@@ -1,0 +1,7 @@
+# Cursor CLI (Pro login), Cursor Grok 4.6 at low effort, standard tier (`cursor-grok-4.6-low`; the
+# `-fast` ids are the paid speed tier, and 4.6 has no plain non-fast "high" id in `cursor-agent models`).
+name = "cursor-grok46-low"
+harness = "cursor"
+model = "cursor-grok-4.6-low"
+subagent = "none"
+timeout_s = 900

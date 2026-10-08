@@ -1,0 +1,9 @@
+# Claude Code, Fable 5.1 at low effort (Max subscription).
+name = "claude-fable-low"
+harness = "claude"
+model = "claude-fable-5-1"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "low"
+max_turns = 80

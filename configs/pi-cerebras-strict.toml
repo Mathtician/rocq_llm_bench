@@ -1,0 +1,10 @@
+# Variant of pi-cerebras: high thinking plus a system-prompt rule that forbids stopping before a successful compile.
+name = "pi-cerebras-strict"
+harness = "pi"
+model = "cerebras/gpt-oss-120b"
+subagent = "none"
+timeout_s = 600
+[args]
+provider = "cerebras"
+thinking = "high"
+append_system_prompt = "HARD RULE: you are not finished until you have run `coqc -q` on the file in this session and seen exit status 0 with the proof ending in Qed. Never leave Admitted in the file. Lemma names are guesses until coqc accepts them: after every edit, compile. If compilation fails, read the error and fix the proof; do not stop."

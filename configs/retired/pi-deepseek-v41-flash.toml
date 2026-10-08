@@ -1,0 +1,12 @@
+# DeepSeek V4.1 Flash via the direct DeepSeek API, using pi's saved credentials.
+# Pi's cached model registry names this model deepseek-flash.
+name = "pi-deepseek-v41-flash"
+harness = "pi"
+model = "deepseek-flash"
+subagent = "none"
+timeout_s = 900
+api_hosts = ["api.deepseek.com"]
+
+[args]
+provider = "deepseek"
+thinking = "high"

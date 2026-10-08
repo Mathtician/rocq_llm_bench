@@ -1,0 +1,64 @@
+{
+  "medial_walk_01": {
+    "domain": "equational_theories",
+    "family": "medial_1",
+    "seed": 20260909,
+    "walk_steps": 32,
+    "reference": "generated, kernel checked on import",
+    "status": "known_true",
+    "difficulty": "uncalibrated"
+  },
+  "medial_countermodel_01": {
+    "domain": "equational_theories",
+    "family": "medial_1",
+    "seed": 20260909,
+    "swapped_leaf_paths": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference": "three-element countermodel, kernel checked on import",
+    "status": "known_counterexample",
+    "difficulty": "calibration control"
+  },
+  "medial_walk_02": {
+    "domain": "equational_theories",
+    "family": "medial_2",
+    "seed": 20260910,
+    "walk_steps": 32,
+    "reference": "generated, kernel checked on import",
+    "status": "known_true",
+    "difficulty": "uncalibrated"
+  },
+  "medial_countermodel_02": {
+    "domain": "equational_theories",
+    "family": "medial_2",
+    "seed": 20260910,
+    "swapped_leaf_paths": [
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "reference": "three-element countermodel, kernel checked on import",
+    "status": "known_counterexample",
+    "difficulty": "calibration control"
+  }
+}

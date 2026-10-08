@@ -1,0 +1,7 @@
+name = "claude-sonnet"
+harness = "claude"
+model = "claude-sonnet-5"
+subagent = "none"
+timeout_s = 900
+[args]
+max_turns = 80

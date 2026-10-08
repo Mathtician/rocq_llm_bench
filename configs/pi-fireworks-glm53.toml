@@ -1,0 +1,9 @@
+# GLM-5.3 on Fireworks: ties Kimi K3 at the top of the open-weight index.
+name = "pi-fireworks-glm53"
+harness = "pi"
+model = "accounts/fireworks/models/glm-5p3"
+subagent = "none"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "medium"

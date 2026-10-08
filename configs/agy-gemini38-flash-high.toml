@@ -1,0 +1,6 @@
+# Antigravity CLI (Google AI Pro login), Gemini 3.8 Flash at high effort. Model ids from `agy models`.
+name = "agy-gemini38-flash-high"
+harness = "agy"
+model = "gemini-3.8-flash-high"
+subagent = "none"
+timeout_s = 900

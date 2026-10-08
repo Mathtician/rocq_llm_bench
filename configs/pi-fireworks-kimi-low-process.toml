@@ -1,0 +1,10 @@
+# Kimi K3 on Fireworks, thinking low, with the process paragraph: A/B against pi-fireworks-kimi-low.
+name = "pi-fireworks-kimi-low-process"
+harness = "pi"
+model = "accounts/fireworks/models/kimi-k3"
+subagent = "none"
+prompt = "prompts/process.md"
+timeout_s = 900
+[args]
+provider = "fireworks"
+thinking = "low"

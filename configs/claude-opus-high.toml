@@ -1,0 +1,8 @@
+name = "claude-opus-high"
+harness = "claude"
+model = "claude-opus-5"
+subagent = "none"
+timeout_s = 900
+[args]
+effort = "high"
+max_turns = 80
